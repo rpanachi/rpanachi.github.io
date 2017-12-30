@@ -3,7 +3,6 @@
 # Change this file for any custom CSS.
 ---
 
-/* We need to add display:inline in order to align the '>>' of the 'read more' link */
 .post-excerpt p {
 	display:inline;
 }
@@ -12,3 +11,63 @@
 @import
 	"syntax"
 ;
+
+.main-header {
+  all: unset;
+}
+.home-template .main-header:after {
+  all: unset;
+}
+
+.main-header .main-nav {
+  margin: 0 auto;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #ddd;
+}
+.main-header .main-nav .main-nav-logo {
+  float: left;
+  margin-right: 30px;
+}
+.main-header .main-nav .main-nav-links {
+  float: right;
+  margin-top: 6px;
+}
+.main-header .main-nav .main-nav-links a {
+  padding: 10px;
+  overflow: hidden;
+}
+.main-header .main-nav .main-nav-links svg {
+  width: 36px;
+  height: 36px;
+  fill: #4A4A4A;
+}
+.main-header .main-nav .main-nav-links svg:hover {
+  fill: #000;
+}
+.main-header .main-nav .main-nav-logo h1 {
+  color: #4a4a4a;
+  font-size: 2.5em;
+}
+.main-header .main-nav .main-nav-logo h1:hover {
+  color: #000;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 768px) {
+  .main-header .main-nav {
+    margin-top: 16px;
+    width: 90%;
+  }
+  .main-header .main-nav .main-nav-links {
+    margin-top: 10px;
+  }
+  .main-header .main-nav .main-nav-logo h1 {
+    font-size: 2em;
+  }
+  .main-header .main-nav .main-nav-links a {
+    padding: 2px;
+  }
+  .main-header .main-nav .main-nav-links svg {
+    width: 20px;
+    height: 20px;
+  }
+}

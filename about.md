@@ -1,6 +1,10 @@
 ---
 layout: page
-title: About me 
+title: About Me
+archive: true
+excerpt: 'A Software Engineer that like to code and learning new things'
 ---
-
-This is a static page. It could be an 'about page' if you'd like.
+{% for post in site.categories.welcome %}
+  {{ post.content }}
+{% endfor %}
+---
