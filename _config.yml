@@ -21,7 +21,7 @@ quiet:     false
 # Theme
 url:         https://rpanachi.com
 author:      Rodrigo Panachi
-description: Wanderings of a Software Engineer about Programming, DevOps and Nerd/Geek stuff
+description: Rodrigo Panachi's tech blog
 bio:         A Software Engineer that like to code and learn new things. Follow my thoughts on <a href="https://twitter.com/rpanachi">Twitter</a>, fork my code on <a href="https://github.com/rpanachi">Github</a> and hire me on <a href="https://linkedin.com/in/rpanachi">Linkedin</a>.
 
 # Custom Configs
