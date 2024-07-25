@@ -2,15 +2,14 @@
 layout: post
 title: "[pt-BR] Transforme seu roteador wi-fi em um NAS e Media Server UPnP/DLNA com OpenWRT"
 date: 2013-09-24 00:00:00
-categories: openwrt hacking mybrain
+categories: openwrt hacking diy mybrain
 excerpt: Laugh in the face of danger
 disqus: true
 archive: true
 ---
 
-
-> The Linux philosophy is 'Laugh in the face of danger'. Oops. Wrong One. 'Do it yourself'. Yes, that's it.<br/>
-> ―  Linus
+> If it runs Linux, you can make it run anything.<br/>
+> ―  Tim O’Reilly
 
 <b>TL;DR</b> [OpenWRT](https://openwrt.org/) é uma distro Linux embarcável em roteadores que permite customizar e instalar serviços sem a necessidade de compilar um novo firmware. Em outras palavras, é um "firmware on steroids" para roteadores.
 
