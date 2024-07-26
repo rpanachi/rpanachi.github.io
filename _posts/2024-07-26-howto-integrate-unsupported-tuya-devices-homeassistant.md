@@ -17,7 +17,7 @@ Recently I bought this [Energy Meter device](https://expo.tuya.com/product/79811
 
 ![Unsupported device](/assets/images/dvCNJX3A.png)
 
-Beside that, when I check the device logs on [Tuya Cloud platform](https://platform.tuya.com/cloud/), it have all the data that I need:
+Despite that, when I check the device logs on [Tuya Cloud platform](https://platform.tuya.com/cloud/), it have all the data that I need:
 
 ![Device data](/assets/images/264756016-74b4f6d1-8dc0-4bf9-b6e6-2cc23c78342a.png)
 
