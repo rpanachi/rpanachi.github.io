@@ -235,7 +235,7 @@ db12x> reset
 ## The triumph
 If you do all commands right and with a bit of lucky, the router should boot normally and the LuCi be accessible on 192.168.1.1 after few minutes.
 
-Enjoy \o/
+Enjoy o/
 
 ## References
 
