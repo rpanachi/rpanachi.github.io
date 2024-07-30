@@ -11,6 +11,7 @@ kramdown:
 
 # Serving
 baseurl: /
+future: false
 
 # Outputting
 permalink: /:year/:month/:day/:title

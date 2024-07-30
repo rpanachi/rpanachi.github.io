@@ -1,0 +1,16 @@
+name: Scheduled Publish
+
+on:
+  schedule:
+    - cron: '30 10 * * *'  # Run at 10:30am every day
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Trigger GitHub Pages Publish action
+        run: |
+          curl --fail --request POST \
+            --url  https://api.github.com/repos/rpanachi/rpanachi.github.io/pages/builds \
+            --header "Authorization: token $TOKEN"
+        env:
+          TOKEN: $PUBLISH_TOKEN
