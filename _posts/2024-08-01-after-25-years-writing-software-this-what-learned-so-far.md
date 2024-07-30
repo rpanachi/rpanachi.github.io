@@ -51,7 +51,7 @@ Protip: [embrace the boring code-style](https://www.reddit.com/r/programminghorr
 ## Build trust and reputation by delivering software
 Trust is the most valuable soft skill in your career. If people trust you,
 you'll progress more easily. Building trust involves consistently delivering
-quality work, being reliable, and communicating effectively.
+quality work and communicating effectively.
 Earn reputation points by shipping working software. When you deliver reliable software, you gain respect, which you can use to negotiate raises, make significant decisions, and lead and inspire other developers.
 
 Protip: read [Ship it!](https://pragprog.com/titles/prj/ship-it/) book.
