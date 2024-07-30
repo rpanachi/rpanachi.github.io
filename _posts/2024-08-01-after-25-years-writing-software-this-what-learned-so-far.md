@@ -69,7 +69,7 @@ Protip: read [The Pragmatic Programmer](https://pragprog.com/titles/tpp20/the-pr
 
 ## Don't be a hostage to tools
 While it's great to have at disposal the latest and greatest tools, fancy IDEs with integrated AI, visual tools to drag and drop block of codes with ease, never stray too far from raw programming.
-Master command-line tools and simple editors; Familiarize yourself with simple editors like Vim (or Emacs), command-line tools like `curl`, `git` and Unix utilities. The ability to work efficiently in the terminal is invaluable.
+Master command-line tools and simple editors like Vim (or Emacs), command-line tools like `curl`, `git` and Unix utilities like `grep` and pipe operator. The ability to work efficiently in the terminal is invaluable.
 Simpler tools often offer greater flexibility and control, and being proficient in them can enhance your overall effectiveness.
 
 Protip: [use VIM](https://www.youtube.com/watch?v=wlR5gYd6um0).
