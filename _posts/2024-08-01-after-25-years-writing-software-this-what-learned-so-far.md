@@ -57,7 +57,7 @@ Earn reputation points by shipping working software. When you deliver reliable s
 Protip: read [Ship it!](https://pragprog.com/titles/prj/ship-it/) book.
 
 ## Learn a database thoroughly
-Understanding a database inside and out is crucial. Master at least one popular SGDB; My recommendation is PostgreSQL. Learn how query analysis works, how data types are managed, the better way to use indexes, and some of the database internals. Know what practices to use and the ones to avoid.
+Understanding a database inside and out is crucial. Master at least one popular DBMS; My recommendation is PostgreSQL. Learn how query analysis works, how data types are managed, the better way to use indexes, and some of the database internals. Know what practices to use and the ones to avoid.
 A significant cause of low performance or bottleneck is often related to the database or its improper use. This deep understanding will help you optimize your applications and troubleshoot performance issues, ensuring your software runs smoothly and efficiently.
 
 Protip: read [The Art Of PostgreSQL](https://theartofpostgresql.com/) book.
