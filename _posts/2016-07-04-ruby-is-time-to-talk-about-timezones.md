@@ -44,7 +44,7 @@ day   = (24 * 60 * 60)       # 86400
 time  = Time.at(unix + day)  # 2016-05-17 04:10:23 -0300
 ```
 
-<strong>Note:</strong> there's a [Time class one that is part of core Ruby](http://ruby-doc.org/core-2.2.0/Time.html) and there is an additional [Time class that is part of the standard library](http://apidock.com/ruby/files/lib/time.rb). The standard library Time class extends the core Time class by adding some methods. See the documentation of both classes for more details.
+<strong>Note:</strong> there's a [Time class one that is part of core Ruby](https://ruby-doc.org/core-2.2.0/Time.html) and there is an additional [Time class that is part of the standard library](https://apidock.com/ruby/files/lib/time.rb). The standard library Time class extends the core Time class by adding some methods. See the documentation of both classes for more details.
 
 ## Date
 
@@ -218,7 +218,7 @@ Time.iso8601(data) # 2016-06-18 20:30:22 -0300
 Time.parse(data)   # 2016-06-18 20:30:22 -0300
 ```
 
-On APIs, you [should use the ISO 8601 standard](http://apiux.com/2013/03/20/5-laws-api-dates-and-times/) to exchange date and time values. Period.
+On APIs, you [should use the ISO 8601 standard](https://apiux.com/2013/03/20/5-laws-api-dates-and-times/) to exchange date and time values. Period.
 
 ## Using TZInfo
 
@@ -383,7 +383,7 @@ add_column :posts, :updated_at, :timestamptz
 
 ## The non-Rails way
 
-If you are [not using Rails](http://solnic.eu/2016/05/22/my-time-with-rails-is-up.html), eventually you will need to handle time parsing and/or time zones conversions. You could do this by yourself, implementing these operations on a helper class or extending the `Time` behavior. You will learn a lot in the process.
+If you are [not using Rails](https://solnic.eu/2016/05/22/my-time-with-rails-is-up.html), eventually you will need to handle time parsing and/or time zones conversions. You could do this by yourself, implementing these operations on a helper class or extending the `Time` behavior. You will learn a lot in the process.
 
 But if you are looking for a ready-to-use solution, you could use the [CoreExt](https://github.com/rpanachi/core_ext) gem and pick only the `Time` extension:
 
@@ -400,7 +400,7 @@ now.iso8601                   # "2016-07-03T20:31:10-03:00"
 10.days.ago                   # Fri, 23 Jun 2016 20:31:10 BRT -03:00
 ```
 
-This gem is a fork of ActiveSupport with many changes to make it more modular and focused only on the <em>extensions</em> of Ruby core classes. You could read more about the motivation and usage examples on my previous post about Hanami migration: [From Rails to Hanami (Lotus) Part 3: Sidekiq Workers, Sequel Plugins, I18n, Timezone issues and Core Extensions](http://rpanachi.com/2016/04/25/from-rails-to-hanami-part3-sidekiq-workers-i18n-timezone-issues-core-ext).
+This gem is a fork of ActiveSupport with many changes to make it more modular and focused only on the <em>extensions</em> of Ruby core classes. You could read more about the motivation and usage examples on my previous post about Hanami migration: [From Rails to Hanami (Lotus) Part 3: Sidekiq Workers, Sequel Plugins, I18n, Timezone issues and Core Extensions](https://rpanachi.com/2016/04/25/from-rails-to-hanami-part3-sidekiq-workers-i18n-timezone-issues-core-ext).
 
 ## Ruby 2.4 to_time bugfix
 
@@ -436,14 +436,14 @@ Know the Ruby `Time` capabilities and always remember to use and store the corre
 
 ## References
 
-* [Are the Date, Time, and DateTime classes necessary?](http://stackoverflow.com/questions/5941613/are-the-date-time-and-datetime-classes-necessary)
-* [Calculate the offset, in hours, of a given timezone from UTC in ruby?](http://stackoverflow.com/questions/9962038/how-do-i-calculate-the-offset-in-hours-of-a-given-timezone-from-utc-in-ruby)
-* [The 5 laws of API dates and times](http://apiux.com/2013/03/20/5-laws-api-dates-and-times/)
+* [Are the Date, Time, and DateTime classes necessary?](https://stackoverflow.com/questions/5941613/are-the-date-time-and-datetime-classes-necessary)
+* [Calculate the offset, in hours, of a given timezone from UTC in ruby?](https://stackoverflow.com/questions/9962038/how-do-i-calculate-the-offset-in-hours-of-a-given-timezone-from-utc-in-ruby)
+* [The 5 laws of API dates and times](https://apiux.com/2013/03/20/5-laws-api-dates-and-times/)
 * [TZInfo - Ruby Timezone Library](https://github.com/tzinfo/tzinfo)
 * [PostgreSQL: Date/Time Types](https://www.postgresql.org/docs/9.1/static/datatype-datetime.html)
 * [MySQL: The DATE, DATETIME, and TIMESTAMP Types](https://dev.mysql.com/doc/refman/5.5/en/datetime.html)
 * [Working with time zones in Ruby on Rails](https://www.varvet.com/blog/working-with-time-zones-in-ruby-on-rails/)
-* [The Exhaustive Guide to Rails Time Zones](http://danilenko.org/2012/7/6/rails_timezones/)
+* [The Exhaustive Guide to Rails Time Zones](https://danilenko.org/2012/7/6/rails_timezones/)
 * [Behavior changes in Ruby 2.4](https://wyeworks.com/blog/2016/6/22/behavior-changes-in-ruby-2.4/)
 
 Learn something new about Ruby time or time zones? Consider to share this post with your friends or co-workers. For questions, comments or suggestions, use the comments below. Code hard and success!

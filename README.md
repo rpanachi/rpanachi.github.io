@@ -1,3 +1,3 @@
 ## About Me
 
-Software Engineer. Blog: [http://rpanachi.com](http://rpanachi.com), Github: [https://github.com/rpanachi](https://github.com/rpanachi)
+Software Engineer. Blog: [https://rpanachi.com](https://rpanachi.com), Github: [https://github.com/rpanachi](https://github.com/rpanachi)

@@ -19,7 +19,7 @@ Now it's time to **migrate the API business logic** (models, validations, servic
 
 ## Migrations
 
-[Sequel migrations](http://sequel.jeremyevans.net/rdoc/files/doc/migration_rdoc.html) is very similar to [Hanami migrations](http://hanamirb.org/guides/migrations/overview/) (almost the same, I guess). To create a migration, I manually created the file `db/migrations/20160327165432_create_users.rb` with the following:
+[Sequel migrations](https://sequel.jeremyevans.net/rdoc/files/doc/migration_rdoc.html) is very similar to [Hanami migrations](https://hanamirb.org/guides/migrations/overview/) (almost the same, I guess). To create a migration, I manually created the file `db/migrations/20160327165432_create_users.rb` with the following:
 
 ```ruby
 Sequel.migration do
@@ -134,7 +134,7 @@ Made this, I was able to migrate the development and test databases simply runni
 
 The models was previously copied from ActiveRecord model with the necessary change to work with Sequel. As it was used only to read from database, the validations and write methods was entirely removed in this process.
 
-Now, I was manually adding the [validations](http://sequel.jeremyevans.net/rdoc/files/doc/validations_rdoc.html) on each model and doing the necessary changes.
+Now, I was manually adding the [validations](https://sequel.jeremyevans.net/rdoc/files/doc/validations_rdoc.html) on each model and doing the necessary changes.
 
 For example, the `app/models/account.rb`:
 

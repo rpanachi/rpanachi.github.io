@@ -135,7 +135,7 @@ That's it! The same behavior without recursion, TCO or any VM aditional configur
 
 * [Recursion on Wikipedia](https://en.wikipedia.org/wiki/Recursion)
 * [Tail Call Optimisation in Ruby (MRI)](https://www.reinteractive.net/posts/214-tail-call-optimisation-in-ruby-mri)
-* [Tail Call Optimization in Ruby](http://nithinbekal.com/posts/ruby-tco/)
-* [Increase max stack size for Ruby 2.0](http://clearcove.ca/2013/10/how-to-increase-max-stack-size-for-ruby-2-0-when-experiencing-systemstackerror-stack-level-too-deep/)
+* [Tail Call Optimization in Ruby](https://nithinbekal.com/posts/ruby-tco/)
+* [Increase max stack size for Ruby 2.0](https://clearcove.ca/2013/10/how-to-increase-max-stack-size-for-ruby-2-0-when-experiencing-systemstackerror-stack-level-too-deep/)
 
 Learn something new about recursion, TCO or RubyVM? Consider to share this post with your friends or co-workers. For questions, comments or suggestions, use the comments below. Code hard and success!

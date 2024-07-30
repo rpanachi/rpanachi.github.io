@@ -119,7 +119,7 @@ That's it. All applicaion's views and templates were able to lookup translations
 
 ## Sequel plugins and extensions
 
-[Sequel](https://github.com/jeremyevans/sequel) is a slim framework and its architecture allow to be easily [extended with plugins and extensions](http://sequel.jeremyevans.net/plugins.html). They could be enabled individually on each model:
+[Sequel](https://github.com/jeremyevans/sequel) is a slim framework and its architecture allow to be easily [extended with plugins and extensions](https://sequel.jeremyevans.net/plugins.html). They could be enabled individually on each model:
 
 ```ruby
 class User < Sequel::Model
@@ -135,15 +135,15 @@ Sequel::Model.plugin :validation_helpers
 
 To make the Sequel models behave like ActiveModel, the following plugins and extensions were used:
 
-- [timestamps](http://sequel.jeremyevans.net/rdoc-plugins/classes/Sequel/Plugins/Timestamps.html): automatically sets the `created_at` and `updated_at` attributes.
+- [timestamps](https://sequel.jeremyevans.net/rdoc-plugins/classes/Sequel/Plugins/Timestamps.html): automatically sets the `created_at` and `updated_at` attributes.
 
-- [update_or_create](http://sequel.jeremyevans.net/rdoc-plugins/classes/Sequel/Plugins/UpdateOrCreate.html): add the method `update_or_create` on model, similar to `find_or_create` of ActiveRecord:
+- [update_or_create](https://sequel.jeremyevans.net/rdoc-plugins/classes/Sequel/Plugins/UpdateOrCreate.html): add the method `update_or_create` on model, similar to `find_or_create` of ActiveRecord:
 
 ```ruby
 Album.update_or_create(artist: "Lionel", name: "Hello")
 ```
 
-- [validation_helpers](http://sequel.jeremyevans.net/rdoc-plugins/classes/Sequel/Plugins/ValidationHelpers.html): add validations to models:
+- [validation_helpers](https://sequel.jeremyevans.net/rdoc-plugins/classes/Sequel/Plugins/ValidationHelpers.html): add validations to models:
 
 ```ruby
 class Album < Sequel::Model
@@ -155,11 +155,11 @@ class Album < Sequel::Model
 end
 ```
 
-- [boolean_readers](http://sequel.jeremyevans.net/rdoc-plugins/classes/Sequel/Plugins/BooleanReaders.html): define `attribute?` methods for boolean columns.
+- [boolean_readers](https://sequel.jeremyevans.net/rdoc-plugins/classes/Sequel/Plugins/BooleanReaders.html): define `attribute?` methods for boolean columns.
 
-- [defaults_setter](http://sequel.jeremyevans.net/rdoc-plugins/classes/Sequel/Plugins/DefaultsSetter.html): makes the column getter methods return the default values for new objects, if the values have not already been set.
+- [defaults_setter](https://sequel.jeremyevans.net/rdoc-plugins/classes/Sequel/Plugins/DefaultsSetter.html): makes the column getter methods return the default values for new objects, if the values have not already been set.
 
-- [dirty](http://sequel.jeremyevans.net/rdoc-plugins/classes/Sequel/Plugins/Dirty.html): traces changes on model's attributes:
+- [dirty](https://sequel.jeremyevans.net/rdoc-plugins/classes/Sequel/Plugins/Dirty.html): traces changes on model's attributes:
 
 ```ruby
 artist.name           # => 'Foo'
@@ -167,7 +167,7 @@ artist.name = 'Bar'
 artist.column_changes # {:name => ['Foo', 'Bar']}
 ```
 
-- [delay_add_association](http://sequel.jeremyevans.net/rdoc-plugins/classes/Sequel/Plugins/DelayAddAssociation.html): allow adding of associated objects to a new (unsaved) object. New associated objects will be saved after saving the parent object, allowing this:
+- [delay_add_association](https://sequel.jeremyevans.net/rdoc-plugins/classes/Sequel/Plugins/DelayAddAssociation.html): allow adding of associated objects to a new (unsaved) object. New associated objects will be saved after saving the parent object, allowing this:
 
 ```ruby
 artist = Artist.new(name: "Lionel")
@@ -177,13 +177,13 @@ artist.save
 
 - [polymorphic](https://github.com/jackdempsey/sequel_polymorphic): available as individual gem, allow to use polymorphic associations.
 
-Check the [Sequel for ActiveRecord users](http://sequel.jeremyevans.net/rdoc/files/doc/active_record_rdoc.html) for more plugins and complete info.
+Check the [Sequel for ActiveRecord users](https://sequel.jeremyevans.net/rdoc/files/doc/active_record_rdoc.html) for more plugins and complete info.
 
 ## Timezone issues
 
 Since all data written in database was on UTC, the datetime attributes must be converted to application's timezone for correct use.
 
-In Rails, this timezone conversion is transparently made by ActiveRecord (using ActiveSupport), since you configure it. For our luck, [Sequel has this support too](http://sequel.jeremyevans.net/rdoc/classes/Sequel/Timezones.html).
+In Rails, this timezone conversion is transparently made by ActiveRecord (using ActiveSupport), since you configure it. For our luck, [Sequel has this support too](https://sequel.jeremyevans.net/rdoc/classes/Sequel/Timezones.html).
 
 Add the gem `tzinfo` to `Gemfile` and enable the [named_timezone](https://github.com/jeremyevans/sequel/blob/master/lib/sequel/extensions/named_timezones.rb) extension adding this on Sequel configuration file:
 

@@ -1,6 +1,6 @@
 ---
 layout: page
-title: About Me
+title: About me
 archive: true
 excerpt: 'A Software Engineer that like to code and learning new things'
 ---

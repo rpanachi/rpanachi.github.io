@@ -23,11 +23,11 @@ archive: true
 
 <b>Atenção: existe a possibilidade (embora pequena) de algo sair muito errado e você ganhar um peso de papel. Prossiga por sua conta e risco... ou se tiver coragem!</b>
 
-O primeiro passo é descobrir o modelo do seu roteador e verificar a compatibilidade nesta página: <http://wiki.openwrt.org/toh/start>. Se não encontrar o modelo ou houver um aviso de não-compatibilidade, sinto muito mas não vai rolar para você.
+O primeiro passo é descobrir o modelo do seu roteador e verificar a compatibilidade nesta página: <https://wiki.openwrt.org/toh/start>. Se não encontrar o modelo ou houver um aviso de não-compatibilidade, sinto muito mas não vai rolar para você.
 
-Se seu roteador for compatível, haverá o target da imagem e um link para uma wiki com um how-to específico do modelo, instruções de instalação, resolução de problemas, etc. Procure pelo nome da release que você deverá baixar daqui <http://downloads.openwrt.org>. A imagem tem o formato <i>openwrt-TARGET-generic-MODELO-VERSAO-squashfs-factory.bin</i>
+Se seu roteador for compatível, haverá o target da imagem e um link para uma wiki com um how-to específico do modelo, instruções de instalação, resolução de problemas, etc. Procure pelo nome da release que você deverá baixar daqui <https://downloads.openwrt.org>. A imagem tem o formato <i>openwrt-TARGET-generic-MODELO-VERSAO-squashfs-factory.bin</i>
 
-Por exemplo, meu roteador é um <i>TP-Link WR1043ND</i>. Procurando na página <http://wiki.openwrt.org/toh/start>, o target compatível com meu roteador é <i>ar71xx</i>:
+Por exemplo, meu roteador é um <i>TP-Link WR1043ND</i>. Procurando na página <https://wiki.openwrt.org/toh/start>, o target compatível com meu roteador é <i>ar71xx</i>:
 
 ![OpenWRT downloads page](/assets/images/0_mhdepUyx8jJt2Qvu.webp)
 
@@ -75,9 +75,9 @@ root@OpenWrt:~#
 
 Se você chegou até aqui, parabéns! Você teve coragem. E felizmente a parte difícil já passou.
 
-Nota: dependendo do seu roteador, a versão do OpenWRT pode variar. Leia a [wiki](http://wiki.openwrt.org/) do modelo do seu roteador para instruções específicas e resolução de problemas.
+Nota: dependendo do seu roteador, a versão do OpenWRT pode variar. Leia a [wiki](https://wiki.openwrt.org/) do modelo do seu roteador para instruções específicas e resolução de problemas.
 
-<b>Importante</b>: caso o pior aconteça (como acabar a energia no meio do processo de flash da firmware) e você não queira utilizar seu roteador como peso de papel, tente seguir os procedimento de "debricking" em <http://wiki.openwrt.org/doc/howto/generic.debrick>
+<b>Importante</b>: caso o pior aconteça (como acabar a energia no meio do processo de flash da firmware) e você não queira utilizar seu roteador como peso de papel, tente seguir os procedimento de "debricking" em <https://wiki.openwrt.org/doc/howto/generic.debrick>
 
 ## Configurando o NAS
 
@@ -96,7 +96,7 @@ root@OpenWrt:~# opkg update
 root@OpenWrt:~# opkg install kmod-usb-storage block-mount kmod-fs-ext4
 ```
 
-O ultimo pacote vai depender do sistema de arquivos do seu HD. Por exemplo, kmod-fs-ext2, etc. Veja os módulos disponíveis em <http://wiki.openwrt.org/doc/howto/storage>
+O ultimo pacote vai depender do sistema de arquivos do seu HD. Por exemplo, kmod-fs-ext2, etc. Veja os módulos disponíveis em <https://wiki.openwrt.org/doc/howto/storage>
 
 Verifique se as partições já foram detectadas rodando `blkid`:
 
@@ -141,7 +141,7 @@ Pronto, seu HD externo pode ser acessado em /mnt/media e o swap foi montado na s
 
 ### Compartilhando na rede
 
-Vou utilizar NFS para compartilhar a partição na rede, mas você também pode utilizar Samba seguindo <http://wiki.openwrt.org/doc/howto/cifs.server>
+Vou utilizar NFS para compartilhar a partição na rede, mas você também pode utilizar Samba seguindo <https://wiki.openwrt.org/doc/howto/cifs.server>
 
 ```
 root@OpenWrt:~# opkg update
@@ -222,12 +222,11 @@ Embora relativamente complicado, todo procedimento para instalação e configura
 A liberdade que o OpenWRT oferece é imensa. O repositório é recheado com pacotes bem úteis e muito fáceis de configurar. Sem falar na economia comparando com um aparelho como AppleTV (que não ofecererá tantos recursos) ou outros media servers do mercado.
 
 ## Referências
-* <http://wiki.openwrt.org/doc/howto/usb.storage>
-* <http://wiki.openwrt.org/doc/howto/nfs.server>
-* <http://wiki.openwrt.org/doc/uci/minidlna>
-* <http://wiki.openwrt.org/doc/uci/transmission>
-* <http://wiki.openwrt.org/toh/tp-link/tl-wr1043nd>
-* <http://www.rodrigorodrigues.info/index.php/2012/01/openwrt-fazendo-magica-com-linux-no-roteador-parte-1/>
-* <http://knowhow.bart.prokop.name/install/openwrt/wr1043nd>
+* <https://wiki.openwrt.org/doc/howto/usb.storage>
+* <https://wiki.openwrt.org/doc/howto/nfs.server>
+* <https://wiki.openwrt.org/doc/uci/minidlna>
+* <https://wiki.openwrt.org/doc/uci/transmission>
+* <https://wiki.openwrt.org/toh/tp-link/tl-wr1043nd>
+* <https://www.rodrigorodrigues.info/index.php/2012/01/openwrt-fazendo-magica-com-linux-no-roteador-parte-1/>
 
 E aí, tem coragem??? Poste sua experiência nos comentários! :)

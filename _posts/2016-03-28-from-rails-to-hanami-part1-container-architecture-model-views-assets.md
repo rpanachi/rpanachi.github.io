@@ -15,7 +15,7 @@ archive: false
 
 A year ago, my company started a big project from scratch. Given the opportunity, we decided to build a Rails API, that would be the system core, centralizing all the business logic, storing data on Postgresql and making calculations with a dozen of Sidekiq workers. And two Rails client applications: one web interface for customers and another for administrators. Both are practically logicless and access all data from the core API.
 
-All three applications was made using Rails 4.2 and a few common gems to handle validation, authentication, AWS, logging, etc. There was deployed on [Docker](https://www.docker.com/) containers managed by [Deis](http://deis.io/), using separated containers for each app and another for workers ([Sidekiq](https://github.com/mperham/sidekiq)).
+All three applications was made using Rails 4.2 and a few common gems to handle validation, authentication, AWS, logging, etc. There was deployed on [Docker](https://www.docker.com/) containers managed by [Deis](https://deis.io/), using separated containers for each app and another for workers ([Sidekiq](https://github.com/mperham/sidekiq)).
 
 After 6 months of development, we launched a beta with restricted access and we had an unpleasant surprise: each application are booting up with almost 500MB of RAM and started to grow. We made a benchmark with a very heavy payload, and the API reaches 4GB of RAM, becoming unresponsive :(
 
@@ -25,7 +25,7 @@ Another point, besides that resources consumption problem, during development we
 
 ## Rethinking the Strategy
 
-[Rails](http://rubyonrails.org/) is a very fun framework and has facilited my work for almost 8 years. I've been using it on production successfully since version 2.0, which made me to contribute to [several open source projects](https://github.com/rpanachi) as well give me more time to focus on business problems.
+[Rails](https://rubyonrails.org/) is a very fun framework and has facilited my work for almost 8 years. I've been using it on production successfully since version 2.0, which made me to contribute to [several open source projects](https://github.com/rpanachi) as well give me more time to focus on business problems.
 
 And now the game is changing: containers has made the microservices architecture cheaper and easily available to our industry. And Rails is still focusing on the monolith :(
 
@@ -33,7 +33,7 @@ It's time to change the way of thinking: look for an alternative that **make pro
 
 ## The Hanami Way
 
-I wanted to validate if using the [Hanami](http://hanamirb.org/) container architecture, we are able to **develop the applications as a monolith but deploys each one separately**, and of course, its performance.
+I wanted to validate if using the [Hanami](https://hanamirb.org/) container architecture, we are able to **develop the applications as a monolith but deploys each one separately**, and of course, its performance.
 
 To do that, I made a simple prove of concept with an application writing data on Postgres database thought a JSON api and another web application reading this data, applying a search and pagination, rendering HTML.
 
@@ -248,7 +248,7 @@ irb(main):001:0> DB["select * from users"]
 
 Since my goal is to connect to a previous migrated database schema from Rails, the migrations are not concern for now. There will be shown on next post.
 
-Right now, just need to declare the models and associations using [Sequel Model](http://sequel.jeremyevans.net/rdoc/files/doc/association_basics_rdoc.html).
+Right now, just need to declare the models and associations using [Sequel Model](https://sequel.jeremyevans.net/rdoc/files/doc/association_basics_rdoc.html).
 
 By example, consider the `Company` and `User` models, with the following database schema:
 
@@ -313,7 +313,7 @@ end
 
 ## Views/Templates
 
-This was the most easily migrated feature. Just copied and pasted the controllers and ERB views from Rails application to Hanami structure and made the [necessary changes](http://hanamirb.org/guides/views/templates/), like move the controller actions from methods to action classes, template structures, partials and everything worked like a charm.
+This was the most easily migrated feature. Just copied and pasted the controllers and ERB views from Rails application to Hanami structure and made the [necessary changes](https://hanamirb.org/guides/views/templates/), like move the controller actions from methods to action classes, template structures, partials and everything worked like a charm.
 
 For example, the Rails controller `app/controllers/admin/users_controller.rb`:
 
