@@ -19,17 +19,17 @@ And, of course, be able to adapt. Changes will occur during the execution and it
 Protip: First, solve the problem. Then, write the code. (John Johnson)
 
 ## Master at least one programming language
-Choose a language that balances execution speed and development efficiency. Becoming an expert in one language allows you to write cleaner, more efficient code and reduces the time spent debugging and maintaining your projects. The cost of development and maintenance often outweighs execution costs, so prioritize languages that streamline your workflow and enhance productivity. And learn it for real, become a master, a reference person. This is a game changer in your career.
+Throughout your career, you'll likely work with a dozen programming languages, including popular ones like Java, JavaScript, Python, Go, and Ruby. However, it's essential to choose one language that balances execution speed and development efficiency and master it. Becoming an expert in one language allows you to write cleaner, more efficient code, reducing the time spent debugging and maintaining projects. The cost of development and maintenance often outweighs execution costs, so prioritize languages that streamline your workflow and enhance productivity. Learn it thoroughly, become a master, and be the go-to person for that language. This can be a game-changer in your career.
 
 Protip: become a contributor to any non-hyped and open source language like [Ruby](https://git.ruby-lang.org/ruby.git) or [Go](https://github.com/golang/go).
 
-## Learn to negotiate
+## Know to negotiate
 Negotiation skills are essential. Whether you're discussing project requirements with stakeholders, negotiating salaries, or resolving conflicts within your team, being able to negotiate effectively is a valuable asset.
 Equally important is knowing when and how to say "no". Setting boundaries and managing expectations ensures that you can deliver well-aligned solutions without burning out in the process.
 
 Protip: read [The Art Of Saying NO](https://www.amazon.com/Art-Saying-NO-Reclaim-Granted-ebook/dp/B074LZG7KS) book.
 
-## Learn Linux, for real
+## Use Linux, for real
 Mastering Linux is fundamental. Be the admin of your machine. Dive deep into commands, get comfortable with the terminal, and embrace text files. This knowledge will be invaluable throughout your career.
 Also, once you embrace the Unix philosophy, you'll start to create more cohesive and reusable code by thinking in a modular and efficient manner. By breaking tasks into simpler, independent components that do one thing well, your solutions become more elegant and maintainable.
 
@@ -56,7 +56,7 @@ Earn reputation points by shipping working software. When you deliver reliable s
 
 Protip: read [Ship it!](https://pragprog.com/titles/prj/ship-it/) book.
 
-## Learn a database thoroughly
+## Master a database thoroughly
 Understanding a database inside and out is crucial. Master at least one popular DBMS; My recommendation is PostgreSQL. Learn how query analysis works, how data types are managed, the better way to use indexes, and some of the database internals. Know what practices to use and the ones to avoid.
 A significant cause of low performance or bottleneck is often related to the database or its improper use. This deep understanding will help you optimize your applications and troubleshoot performance issues, ensuring your software runs smoothly and efficiently.
 
