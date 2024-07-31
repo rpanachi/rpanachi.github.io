@@ -2,7 +2,7 @@ name: Scheduled Publish
 
 on:
   schedule:
-    - cron: '25 11 * * *'  # Run at 10:30am every day
+    - cron: '45 14 * * *'  # Run at 10:30am every day
 jobs:
   refresh:
     runs-on: ubuntu-latest
@@ -11,6 +11,6 @@ jobs:
         run: |
           curl --fail --request POST \
             --url  https://api.github.com/repos/rpanachi/rpanachi.github.io/pages/builds \
-            --header "Authorization: token $PUBLISH_TOKEN"
+            --header "Authorization: token $TOKEN"
         env:
-          PUBLISH_TOKEN: $PUBLISH_TOKEN
+          TOKEN: ${{ secrets.PUBLISH_TOKEN }} 
