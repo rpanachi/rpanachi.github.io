@@ -73,7 +73,7 @@ While it's great to have at disposal the latest and greatest tools, fancy IDEs w
 Master command-line tools and simple editors like Vim (or Emacs), command-line tools like `curl`, `git` and Unix utilities like `grep` and pipe operator. The ability to work efficiently in the terminal is invaluable.
 Simpler tools often offer greater flexibility and control, and being proficient in them can enhance your overall effectiveness.
 
-Protip: [use VIM](https://www.youtube.com/watch?v=wlR5gYd6um0).
+Protip: [use VIM](https://www.youtube.com/watch?v=wlR5gYd6um0) (or any open source editor you like).
 
 ## Packaging matters
 Delivery isn't just about the code itself. Include concise documentation that outlines what your code does, what it doesn’t, evidence of tests, benchmarks, monitoring instructions, and problem-reporting guidelines. The presentation and packaging of your work are crucial, much like how Apple emphasizes the unboxing experience to stand out from competitors.
