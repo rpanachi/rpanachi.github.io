@@ -13,7 +13,7 @@ archive: true
 
 I've using [Home Assistant](https://www.home-assistant.io/) for about 3 years now, for some basic automations like turning devices on/off on determinated periods and for energy production/consumption monitoring.
 
-Recently I bought this [Energy Meter device](https://expo.tuya.com/product/798114) from [AliExpress](https://s.click.aliexpress.com/e/_DBFaPg7) to monitor the energy consumption in my house. It works fine on the [Tuya App](https://www.tuya.com/), but <b>it doesn't work</b> with the [official Home Assistant integration](https://www.home-assistant.io/integrations/tuya/), showns as "unsupported":
+Recently I bought this [Energy Meter device from AliExpress](https://s.click.aliexpress.com/e/_DBFaPg7) to monitor the energy consumption in my house. It works fine on the [Tuya App](https://www.tuya.com/), but <b>it doesn't work</b> with the [official Home Assistant integration](https://www.home-assistant.io/integrations/tuya/), showns as "unsupported":
 
 ![Unsupported device](/assets/images/dvCNJX3A.png)
 
