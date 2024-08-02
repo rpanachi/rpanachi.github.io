@@ -6,6 +6,7 @@ categories: ruby
 excerpt: "To understand recursion, you must understand recursion"
 disqus: true
 archive: false
+redirect_from: /2016/05/30/ruby-recursion-stack-size-tail-call-optimization/
 ---
 
 > To understand recursion, you must understand recursion.<br/>

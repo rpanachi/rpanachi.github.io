@@ -6,7 +6,9 @@ categories: software engineering career
 excerpt: My strong opinionated advices for newcomers to software industry
 disqus: true
 archive: true
-redirect_from: /2024/08/01/after-25-years-writing-software-here-some-things-learned-so-far.md/
+redirect_from:
+  - /2024/08/01/after-25-years-writing-software-here-some-things-learned-so-far.md/
+  - /2024/08/01/after-25-years-writing-software-here-some-things-learned-so-far/
 ---
 
 > The computer was born to solve problems that did not exist before.<br/>

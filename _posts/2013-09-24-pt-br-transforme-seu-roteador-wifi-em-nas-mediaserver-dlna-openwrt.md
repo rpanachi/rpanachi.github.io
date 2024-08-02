@@ -6,6 +6,7 @@ categories: openwrt hacking diy mybrain
 excerpt: Laugh in the face of danger
 disqus: true
 archive: true
+redirect_from: /2013/09/24/pt-br-transforme-seu-roteador-wifi-em-nas-mediaserver-dlna-openwrt/
 ---
 
 > If it runs Linux, you can make it run anything.<br/>

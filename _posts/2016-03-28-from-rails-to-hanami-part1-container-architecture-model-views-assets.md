@@ -6,6 +6,7 @@ categories: ruby hanami rails sequel tutorial
 excerpt: "A pragmatic approach to migrate Rails apps into Hanami container"
 disqus: true
 archive: false
+redirect_from: /2016/03/28/from-rails-to-hanami-part1-container-architecture-model-views-assets/
 ---
 
 > Those who cannot change their minds cannot change anything.<br/>

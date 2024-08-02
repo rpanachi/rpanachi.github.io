@@ -16,7 +16,7 @@ baseurl: /
 future: false
 
 # Outputting
-permalink: /:year/:month/:day/:title
+permalink: /blog/:title
 paginate:  15
 timezone:  UTC
 quiet:     false
