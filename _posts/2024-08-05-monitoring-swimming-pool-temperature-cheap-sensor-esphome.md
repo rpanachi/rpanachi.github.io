@@ -16,21 +16,21 @@ Maintaining the right temperature for my swimming pool is crucial for enjoying a
 ## BLE Sensor
 
 I found a suitable [BLE sensor on AliExpress](https://s.click.aliexpress.com/e/_mNXCHZQ) that fit my requirements perfectly:
-- Power efficiency: the sensor runs on two AAA batteries, which last for about six months.
-- Precision: it has a good precision with an error of just 1° C aproximately.
+- Power efficiency: the sensor runs on two AAA batteries, lasting about six months.
+- Precision: it has good precision with an error of just 1° C approximately.
 - Data collecting: it works well with its dedicated mobile app, but doesn't integrate with third-party apps.
 
 ![BLE Pool Sensor](/assets/images/Hb00c297cf3e249018102d7f62cedd77bE.png)
 
-Despite its limitations, the sensor was perfect for my project. However, I needed a way to access the temperature data in real time without using the mobile app and without having to be near the pool.
+Despite its limitations, the sensor was perfect for my project. However, I needed a way to access the temperature data in real-time without using the mobile app or being near the pool.
 
 ## ESPHome
 
-To bridge this gap, I decided to use an ESP32-WROOM-32U, which I also [bought from AliExpress](https://s.click.aliexpress.com/e/_msnaRdA). The external antenna on this model ensures a reliable connection over a longer range.
+To bridge this gap, I used an ESP32-WROOM-32U, which I also [bought from AliExpress](https://s.click.aliexpress.com/e/_msnaRdA). The external antenna on this model ensures a reliable connection over a longer range.
 
 ![ESP-WROOM-32U](/assets/images/H718a967ecf3b48429b23ade45b4a9543n.png)
 
-The ESP32 will works just as BLE <> Wi-Fi bridge, connecting to sensor on each hour, read the temperature and send the data to Home Assistant sensors.
+The ESP32 will work just as a BLE <> Wi-Fi bridge, connecting to the sensor on each hour, reading the temperature and sending the data to Home Assistant sensors.
 
 Here’s how I set it up on ESPHome config:
 
@@ -195,7 +195,7 @@ Notes:
   watch a [detailed tutorial from Everything Smart Home Youtube
   channel](https://www.youtube.com/watch?v=iufph4dF3YU).
 
-After uploading the firmware to ESP32 and with a little of luck, you will see something like that on logs:
+After uploading the firmware to ESP32 and with a little luck, you will see something like that on the logs:
 
 ```
 [16:24:04][D][switch:012]: 'IBS-P01/B Enabled' Turning ON.
@@ -232,13 +232,13 @@ And, of course, the data in Home Assistant device:
 
 It's working but it's not finished. I need to keep the ESP32 turned on and near the pool, running continuously.
 
-I used a standard USB 5V DC adapter plugged into a wall outlet near the pool. And to protect the hardware from the elements, I 3D printed a box to accommodate both the ESP32 and the DC adapter:
+I used a standard USB 5V DC adapter plugged into a wall outlet near the pool. To protect the hardware from the elements, I 3D printed a box to accommodate both the ESP32 and the DC adapter:
 
 ![ESP32 BLE Pool Monitor](/assets/images/esp32-pool-monitor.jpg)
 
 If you want to print the same box for your project, [download the model from my Printables profile](https://www.printables.com/model/962422-esp32-poll-monitor-box).
 
-This setup has been running flawlessly for the past 10 months, providing me with accurate and (almost) real-time water temperature, making the pool maintenance much easier.
+This setup has been running flawlessly for the past 10 months, providing me with accurate and (almost) real-time water temperature, making pool maintenance much easier.
 
 Enjoy o/
 
