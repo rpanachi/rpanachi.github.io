@@ -2,6 +2,7 @@
 plugins:
   - jekyll-seo-tag
   - jekyll-redirect-from
+  - jekyll-target-blank
 
 # Conversion
 markdown:    kramdown
