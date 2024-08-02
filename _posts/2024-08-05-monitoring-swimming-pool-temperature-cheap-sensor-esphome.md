@@ -2,7 +2,7 @@
 layout: post
 title: "Monitoring my swimming pool temperature with a cheap BLE sensor and ESPHome"
 date: 2024-08-05 00:00:00
-categories: homeassistant homeautomation esphome 3dprinting diy
+categories: [home assistant, home automation, esphome, 3dprinting, diy]
 excerpt: How I used an ESP32 board to improve features of a cheap temperature sensor
 disqus: true
 archive: true
