@@ -6,7 +6,9 @@ categories: ruby hanami rails sequel rspec tutorial
 excerpt: "The 'real world problems' driven guide to use Hanami on production"
 disqus: true
 archive: false
-redirect_from: /2016/04/11/from-rails-to-hanami-part2-sequel-migrations-model-validations-specs-fixtures/
+redirect_from:
+  - /2016/04/11/from-rails-to-hanami-part2-sequel-migrations-model-validations-specs-fixtures/
+  - /blog/from-rails-to-hanami-part2-sequel-migrations-model-validations-specs-fixtures/
 ---
 
 > Do or do not. There is no try.<br/>

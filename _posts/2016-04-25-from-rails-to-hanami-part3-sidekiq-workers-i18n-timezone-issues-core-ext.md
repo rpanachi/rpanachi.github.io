@@ -6,8 +6,9 @@ categories: ruby hanami rails sequel tutorial
 excerpt: "The final chapter of the Rails to Hanami migration saga"
 disqus: true
 archive: false
-
-redirect_from: /2016/04/25/from-rails-to-hanami-part3-sidekiq-workers-i18n-timezone-issues-core-ext/
+redirect_from:
+  - /2016/04/25/from-rails-to-hanami-part3-sidekiq-workers-i18n-timezone-issues-core-ext/
+  - /blog/from-rails-to-hanami-part3-sidekiq-workers-i18n-timezone-issues-core-ext/
 ---
 
 > The most basic question is not what is best, but who shall decide what is best.<br/>

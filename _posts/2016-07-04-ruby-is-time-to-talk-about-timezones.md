@@ -6,7 +6,9 @@ categories: ruby datetime timezone
 excerpt: "Everything you always wanted to know about Ruby's date, time and time zone issues but were afraid to ask"
 disqus: true
 archive: false
-redirect_from: /2016/07/04/ruby-is-time-to-talk-about-timezones/
+redirect_from:
+  - /2016/07/04/ruby-is-time-to-talk-about-timezones/
+  - /blog/ruby-is-time-to-talk-about-timezones/
 ---
 
 > Any sufficiently advanced bug is indistinguishable from a feature.<br/>

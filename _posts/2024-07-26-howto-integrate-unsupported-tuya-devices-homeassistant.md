@@ -6,7 +6,9 @@ categories: [home assistant, tuya, python, tutorial]
 excerpt: Connecting directly to Tuya's API using Python
 disqus: true
 archive: true
-redirect_from: /2024/07/26/howto-integrate-unsupported-tuya-devices-homeassistant/
+redirect_from:
+  - /2024/07/26/howto-integrate-unsupported-tuya-devices-homeassistant/
+  - /blog/howto-integrate-unsupported-tuya-devices-homeassistant/
 ---
 
 > The nice thing about standards is that you have so many to choose from.<br/>

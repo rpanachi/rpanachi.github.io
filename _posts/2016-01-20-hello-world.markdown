@@ -6,7 +6,9 @@ categories: welcome
 excerpt: Please allow me to introduce myself
 disqus: false
 archive: true
-redirect_from: /2016/01/20/hello-world/
+redirect_from:
+  - /2016/01/20/hello-world/
+  - /blog/hello-world/
 ---
 
 > Programs must be written for people to read, and only incidentally for machines to execute. <br/>

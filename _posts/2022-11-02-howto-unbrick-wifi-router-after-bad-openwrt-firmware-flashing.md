@@ -6,7 +6,9 @@ categories: openwrt hacking diy mybrain
 excerpt: Mistakes were made
 disqus: true
 archive: true
-redirect_from: /2022/11/02/howto-unbrick-wifi-router-after-bad-openwrt-firmware-flashing/
+redirect_from:
+  - /2022/11/02/howto-unbrick-wifi-router-after-bad-openwrt-firmware-flashing/
+  - /blog/howto-unbrick-wifi-router-after-bad-openwrt-firmware-flashing/
 ---
 
 > The Linux philosophy is 'Laugh in the face of danger'. Oops. Wrong One. 'Do it yourself'. Yes, that's it.<br/>
