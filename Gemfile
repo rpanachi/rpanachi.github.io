@@ -8,3 +8,4 @@ gem "jekyll-redirect-from"
 gem "jekyll-target-blank"
 gem "jekyll-archives"
 
+gem "ffi", "1.16.3"
