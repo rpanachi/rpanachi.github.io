@@ -2,7 +2,7 @@ name: Scheduled Publish
 
 on:
   schedule:
-    - cron: '30 13 * * *'  # Run at 10:30am every day
+    - cron: '30 13 * * Mon'  # Run at 10:30am every day
 jobs:
   refresh:
     runs-on: ubuntu-latest
