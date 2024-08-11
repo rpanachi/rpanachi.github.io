@@ -33,8 +33,6 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
-      with:
-        
       - name: Setup Ruby
         uses: ruby/setup-ruby@v1
         with:
