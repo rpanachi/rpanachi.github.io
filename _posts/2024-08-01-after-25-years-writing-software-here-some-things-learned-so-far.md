@@ -2,7 +2,7 @@
 layout: post
 title: "I've been writing software for the last 25 years. Here some things I learned so far"
 date: 2024-08-01 00:00:00
-categories: software engineering career
+categories: [software engineering, career]
 excerpt: My strong opinionated advices for newcomers to software industry
 disqus: true
 archive: true

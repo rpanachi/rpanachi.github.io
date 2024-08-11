@@ -20,12 +20,8 @@ title: Rodrigo Panachi's tech blog
               <time class="post-date" datetime="{{ post.date | date:"%Y-%m-%d" }}">
                   {{ post.date | date_to_string }}
               </time>
-              <span>
-                  on
-                  {% for category in post.categories %}
-                      <a href="/category/{{ category | slugify }}">{{ category -}}</a>{% unless forloop.last %}, {% endunless %}
-                  {% endfor %}
-              </span>
+              {% assign categories = post.categories %}
+              {% include categories.html %}
           </footer>
       </article>
     {% endfor %}
