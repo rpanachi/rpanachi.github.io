@@ -14,9 +14,10 @@ post_class: post-template
             <section class="post-meta">
                 <time class="post-date" datetime="{{ page.date | date: "%Y-%m-%d" }}">{{ page.date | date_to_string }}</time>
                 <span>
-                  {% if page.categories.size > 0 %}
-                      {{ page.categories | array_to_sentence_string | prepend: 'on ' | append: '.' }}
-                  {% endif %}
+                    on
+                    {% for category in page.categories %}
+                        <a href="/category/{{ category | slugify }}">{{ category -}}</a>{% unless forloop.last %}, {% endunless %}
+                    {% endfor %}
                 </span>
             </section>
         </header>

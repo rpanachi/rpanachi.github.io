@@ -3,6 +3,7 @@ plugins:
   - jekyll-seo-tag
   - jekyll-redirect-from
   - jekyll-target-blank
+  - jekyll-archives
 
 # Conversion
 markdown:    kramdown
@@ -37,3 +38,9 @@ links:
   linkedin: https://linkedin.com/in/rpanachi
 twitter:
   username: rpanachi
+
+jekyll-archives:
+  enabled: [categories]
+  layout: archive
+  permalinks:
+    category: '/category/:name/'

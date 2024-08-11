@@ -6,4 +6,5 @@ gem "jekyll"
 gem "jekyll-seo-tag"
 gem "jekyll-redirect-from"
 gem "jekyll-target-blank"
+gem "jekyll-archives"
 
