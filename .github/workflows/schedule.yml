@@ -10,7 +10,8 @@ jobs:
       - name: Trigger GitHub Pages Publish action
         run: |
           curl --fail --request POST \
-            --url  https://api.github.com/repos/rpanachi/rpanachi.github.io/pages/builds \
-            --header "Authorization: token $TOKEN"
+        --url https://api.github.com/repos/rpanachi/rpanachi.github.io/actions/workflows/jekyll.yml/dispatches \
+        --header "Authorization: token $TOKEN" \
+        -d '{"ref":"master"}'
         env:
           TOKEN: ${{ secrets.PUBLISH_TOKEN }} 
