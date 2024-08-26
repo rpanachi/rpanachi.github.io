@@ -2,7 +2,8 @@ name: Scheduled Publish
 
 on:
   schedule:
-    - cron: '30 13 * * Mon'  # Run at 10:30am every day
+    - cron: '30 13 * * 1'  # Run at 10:30am (1:30pm UTC) every Monday
+
 jobs:
   refresh:
     runs-on: ubuntu-latest
