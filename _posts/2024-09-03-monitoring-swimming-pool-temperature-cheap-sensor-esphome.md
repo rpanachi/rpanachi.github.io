@@ -236,7 +236,7 @@ I used a standard USB 5V DC adapter plugged into a wall outlet near the pool. To
 
 ![ESP32 BLE Pool Monitor](/assets/images/esp32-pool-monitor.jpg)
 
-If you want to print the same box for your project, [download the model from my Printables profile](https://www.printables.com/model/962422-esp32-poll-monitor-box).
+If you want to print the same box for your project, [download the model from my Printables profile](https://www.printables.com/model/962422-esp32-pool-monitor-box).
 
 This setup has been running flawlessly for the past 10 months, providing me with accurate and (almost) real-time water temperature, making pool maintenance much easier. From here, I can create automations to turn the heater on, send a message on family group when the temperature is ideal, and much more.
 
