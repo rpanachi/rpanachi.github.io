@@ -14,12 +14,15 @@ redirect_from:
 > Programs must be written for people to read, and only incidentally for machines to execute. <br/>
 > ―  Harold Abelson
 
-Hi, my name is <b>Rodrigo Panachi</b>. I'm graduated as <b>Computer Scientist</b> and working as <b>Software Developer/Engineer</b> since 2002.
 
-My primary language of choice is <b>Ruby</b>, but I also have experience with <b>Elixir</b>, <b>Python</b>, <b>Java</b> and <b>Javascript</b>. Currently learning Go, Lua, Clojure and forever C.
+Hi, my name is <b>Rodrigo Panachi</b>. I’ve been passionate about coding since the early 2000s. After earning my degree as a <b>Computer Scientist</b>, I turned that passion into a career, and I’ve been working as a software engineer for the last two decades.
 
-On the spare times, I like to code and learn new things about technology and nerd/geek/hacking stuff like electronics and artificial intelligence.
+[I've been writing software for the last 25 years. Here some things I learned so far]({% post_url 2013-09-24-pt-br-transforme-seu-roteador-wifi-em-nas-mediaserver-dlna-openwrt %})
 
-Sometimes I gather some ideas and experiences and write a post on this site.
+I’m all about <b>keeping things simple</b> and solving problems in the most efficient way possible. I’ve worked across a bunch of different industries: payments, e-commerce, health, logistics, education, you name it. This has given me a wide-ranging perspective and a solid foundation in various tech environments.
 
-You can find my codes and the projects that I've contributed on <b>[Github]({{site.links.github}})</b>. Follow my thoughts on <b>[Twitter]({{site.links.twitter}})</b> and subscribe to my <b>[RSS feed]({{site.links.feed}})</b> to stay tuned on my next posts. You can also hire me on <b>[Linkedin]({{site.links.linkedin}})</b> :)
+I’ve dabbled in a lot of programming languages along the way, like <b>Ruby</b>, <b>Python</b>, <b>Go</b>, <b>Java</b>, <b>Elixir</b>, <b>JavaScript</b>, whatever gets the job done. I’m all about building software that works well and meets real needs.
+
+When I’m not working, you’ll probably find me tinkering with electronics, diving into <b>DIY projects</b>, or automating my home. I love experimenting with the <b>Arduino/ESP32</b>, artificial intelligence, and [3D printing](https://www.printables.com/@rpanachi). It’s a fun way to keep learning and stay curious.
+
+You can find my codes and the projects that I've contributed on <b>[Github]({{site.links.github}})</b>. Subscribe to my <b>[RSS feed]({{site.links.feed}})</b> to stay tuned on my next posts. You can also hire me on <b>[Linkedin]({{site.links.linkedin}})</b> :)
