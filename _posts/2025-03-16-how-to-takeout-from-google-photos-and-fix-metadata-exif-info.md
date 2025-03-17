@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "How to backup your photos from Google (and clean up their mess)"
+title: "How to backup your photos from Google and fix the Exif metadata"
 date: 2025-03-16 00:00:00
 categories: [tutorial, google takeout, hacking, ruby, exiftool]
 excerpt: How I used a Ruby script and exiftool to fix the info metadata on the Google Photos backup files
