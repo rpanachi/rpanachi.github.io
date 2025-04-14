@@ -42,7 +42,7 @@ Users send broken data. Bugs introduce garbage into database. Validate everythin
 If something fails, you should be able to retry it without causing damage. Idempotency is your friend. Don’t ship production code without it.
 
 ### Be explicit  
-Use `"mobile"` instead of `3` to describe enums. Name things clearly: `has_balance`, `requested_amount`. Never assume something is “obvious.” It never is.  
+Write greppable code. Use `"mobile"` instead of `3` to describe enums. Name things clearly: `has_balance`, `requested_amount`, etc. Never assume something is “obvious”. It never is.
 More on this here: [Greppability: A code metric](https://morizbuesing.com/blog/greppability-code-metric/)
 
 ### Testing > Debugging  
