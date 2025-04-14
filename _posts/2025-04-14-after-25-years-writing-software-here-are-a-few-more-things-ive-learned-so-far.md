@@ -13,11 +13,11 @@ archive: true
 
 ## But first, some context
 
-I'm a self-taught generalist software engineer focused mainly on web applications, with a strong focus on pragmatism and problem solving. Over the last 25 years, I’ve worked in small startups, mid-sized companies, and large enterprises—mostly in Linux environments, using open-source languages and tools. Along the way, I’ve also had some experience leading and managing teams.
+I'm a self-taught generalist (aka full-stack) software engineer experienced mainly in web applications, having a strong focus on pragmatism and problem solving. Over the last 25 years, I’ve worked in small startups, mid-sized companies, and large enterprises—mostly in Linux environments, using open-source languages and tools. Along the way, I’ve also had some experience leading and managing teams.
 
 The lessons below come from years of seeing what works and what doesn’t. Some are the result of success, others from hitting the wall—hard.
 
-Read the part 1 here: [I've been writing software for the last 25 years. Here some things I learned so far]({% post_url 2024-08-01-after-25-years-writing-software-here-some-things-learned-so-far %})
+Read part 1 here: [I've been writing software for the last 25 years. Here some things I learned so far]({% post_url 2024-08-01-after-25-years-writing-software-here-some-things-learned-so-far %})
 
 ---
 
@@ -27,16 +27,16 @@ Read the part 1 here: [I've been writing software for the last 25 years. Here so
 Automate everything you can—project setup, configuring local environments, creating test data with scripts, etc. If you do it more than once, automate it. Your future self (and teammates) will thank you.
 
 ### Applications should run locally  
-If your app can’t run on a dev machine, you’re doing it wrong. Make local setup simple—native or Docker, doesn’t matter. Devs need full control to reproduce problems, debug, and tests... locally. Include scripts to generate sample data, simulate API calls, and preload images or documents. These tools are part of the product too.
+If your app can’t run on a dev machine, you’re doing it wrong. Make local setup simple—native or Docker, doesn’t matter. Devs need full control to reproduce problems, debug, and test... locally. Include scripts to generate sample data, simulate API calls, and preload images or documents. These tools are part of the product too.
 
 ### Design your code to fail  
 Don’t trust inputs. Add logs where it matters. Write checkers, guard clauses, notifications for edge case scenarios. Expect things to break—and make it easy to recover.
 
 ### Track requests and responses  
-Log everything used in third-party integrations—requests, responses, payloads. You *will* need it for debugging and audits.
+Log everything used in third-party integrations—requests, responses, and payloads. You *will* need it for debugging and audits.
 
 ### Don’t blindly trust your data
-Users send broken data. Bugs introduce garbage on database. Validate everything—on input, on output, on storage. Your system is only as good as the data flowing through it.
+Users send broken data. Bugs introduce garbage into database. Validate everything—on input, on output, on storage. Your system is only as good as the data flowing through it.
 
 ### Don’t ignore idempotency  
 If something fails, you should be able to retry it without causing damage. Idempotency is your friend. Don’t ship production code without it.
@@ -51,14 +51,14 @@ Relying only on debugging tools could lead you to chase problems after they happ
 ### Avoid unnecessary frameworks  
 The web is just HTTP—receive a request, send a response. That hasn’t changed in decades. You don’t need heavy frameworks to handle 90% of what you build. Stick with boring, battle-tested tools.
 
-### Monoliths aren’t aldways bad. Microservices aren’t always good.  
+### Monoliths aren’t always bad. Microservices aren’t always good.  
 Don’t split your system into pieces unless you have a *really* good reason. Scale only when you must. Premature complexity is the real bottleneck.
 
 ### Worse is better  
 Keep it simple. Forget hexagonal architecture and all the over-engineered “best practices” that solve problems you don’t have. [Worse is better](https://www.dreamsongs.com/WorseIsBetter.html)—and often faster, clearer, and easier to maintain.
 
 ### Don’t try to make it perfect. Make it adaptable.  
-There’s no silver bullet. Instead of aiming for the perfect solution, aim for something adjustable—configurable, flexible, easy to change when needed. Prioritize adaptability over perfection.
+There’s no silver bullet. Instead of aiming for the perfect solution, aim for something adjustable, configurable, flexible, and easy to change when needed. Prioritize adaptability over perfection.
 
 ---
 
