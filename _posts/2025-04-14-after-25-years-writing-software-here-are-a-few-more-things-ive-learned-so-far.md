@@ -1,23 +1,25 @@
 ---
 layout: post
-title: "I've been writing software for the last 25 years. Here are a few more things I've learned so far"
+title: "I've been writing software for the last 25 years. Here are a few more things I've learned so far (part 2)"
 date: 2025-04-14 00:00:00
 categories: [software engineering, career]
 excerpt: What the docs don’t teach you, 25 years will
 disqus: true
 archive: true
+redirect_from:
+  - /after-25-years-writing-software-here-are-a-few-more-things-ive-learned-so-far/
 ---
 
 > The code you write makes you a programmer. The code you delete makes you a good one. The code you don’t have to write makes you a great one.<br/>
 > –  Unknown
+
+This is part 2 of the previous post: [I've been writing software for the last 25 years. Here some things I learned so far]({% post_url 2024-08-01-after-25-years-writing-software-here-some-things-learned-so-far %})
 
 ## But first, some context
 
 I'm a self-taught generalist (aka full-stack) software engineer experienced mainly in web applications, having a strong focus on pragmatism and problem solving. Over the last 25 years, I’ve worked in small startups, mid-sized companies, and large enterprises—mostly in Linux environments, using open-source languages and tools. Along the way, I’ve also had some experience leading and managing teams.
 
 The lessons below come from years of seeing what works and what doesn’t. Some are the result of success, others from hitting the wall—hard.
-
-Read part 1 here: [I've been writing software for the last 25 years. Here some things I learned so far]({% post_url 2024-08-01-after-25-years-writing-software-here-some-things-learned-so-far %})
 
 ---
 
