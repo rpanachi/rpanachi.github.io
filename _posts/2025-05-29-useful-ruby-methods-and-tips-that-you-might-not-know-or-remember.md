@@ -8,7 +8,7 @@ disqus: true
 archive: true
 ---
 
-> "Code is like humor. When you have to explain it, it’s bad."</br>
+> "Code is like humor. When you have to explain it, it’s bad."<br/>
 > — Cory House
 
 ## Enumerable Methods
