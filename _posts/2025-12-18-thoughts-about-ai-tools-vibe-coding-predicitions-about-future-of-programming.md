@@ -8,7 +8,7 @@ disqus: true
 archive: true
 ---
 
-> "AI tools are great if you know what you’re doing."
+> "AI tools are great if you know what you’re doing."<br/>
 > — A tired developer
 
 
