@@ -1,6 +1,6 @@
 ---
 layout: post
-title: What 6 months of Laravel taught me as a Rails developer
+title: What 6 months of PHP/Laravel taught me as a Ruby/Rails developer
 date: 2026-01-05 00:00:00
 categories: [php, laravel, ruby, rails, career, thoughts]
 excerpt: Different languages, surprisingly similar developer experience
