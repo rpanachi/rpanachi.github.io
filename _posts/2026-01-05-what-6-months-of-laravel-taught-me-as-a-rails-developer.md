@@ -8,7 +8,7 @@ disqus: true
 archive: true
 ---
 
-> “Good programmers use their brains, but good guidelines save us having to think out every case.”
+> “Good programmers use their brains, but good guidelines save us having to think out every case.”<br/>
 > — Francis Glassborow
 
 After many years working with **Ruby on Rails**, I’ve spent the last **six months working full time with PHP and Laravel**.
