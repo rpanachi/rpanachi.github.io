@@ -4,7 +4,6 @@ title: "I've been writing software for the last 25 years. Here are a few more th
 date: 2025-04-14 00:00:00
 categories: [software engineering, career]
 excerpt: What the docs don’t teach you, 25 years will
-disqus: true
 archive: true
 redirect_from:
   - /after-25-years-writing-software-here-are-a-few-more-things-ive-learned-so-far/

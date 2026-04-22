@@ -4,7 +4,6 @@ title:  Hello World
 date:   2016-01-20 00:00:00
 categories: welcome
 excerpt: Please allow me to introduce myself
-disqus: false
 archive: true
 redirect_from:
   - /2016/01/20/hello-world/

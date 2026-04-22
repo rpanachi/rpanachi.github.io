@@ -4,7 +4,6 @@ title: "How to integrate unsupported Tuya devices on Home Assistant"
 date: 2024-07-26 00:00:00
 categories: [home assistant, tuya, python, tutorial]
 excerpt: Connecting directly to Tuya's API using Python
-disqus: true
 archive: true
 redirect_from:
   - /2024/07/26/howto-integrate-unsupported-tuya-devices-homeassistant/

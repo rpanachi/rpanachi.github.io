@@ -4,7 +4,6 @@ title: Useful Ruby methods and tips that you might not know (or remember)
 date: 2025-05-29 00:00:00
 categories: [ruby, ruby on rails]
 excerpt: Ruby tricks you forgot you knew (but totally should remember)
-disqus: true
 archive: true
 ---
 

@@ -4,7 +4,6 @@ title: "How to unbrick your wi-fi router after a bad OpenWRT firmware flashing"
 date: 2022-11-02 00:00:00
 categories: openwrt hacking diy mybrain
 excerpt: Mistakes were made
-disqus: true
 archive: true
 redirect_from:
   - /2022/11/02/howto-unbrick-wifi-router-after-bad-openwrt-firmware-flashing/

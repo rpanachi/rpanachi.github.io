@@ -4,7 +4,6 @@ title: My thoughts about AI tools, vibe coding, and some predictions about the f
 date: 2025-12-18 00:00:00
 categories: [ai, vibe coding, thoughts]
 excerpt: AI is not a replacement for thinking. It’s an advanced code generator
-disqus: true
 archive: true
 ---
 

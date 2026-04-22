@@ -4,7 +4,6 @@ title: "[pt-BR] Transforme seu roteador wi-fi em um NAS e Media Server UPnP/DLNA
 date: 2013-09-24 00:00:00
 categories: openwrt hacking diy mybrain
 excerpt: Laugh in the face of danger
-disqus: true
 archive: true
 redirect_from:
   - /2013/09/24/pt-br-transforme-seu-roteador-wifi-em-nas-mediaserver-dlna-openwrt/

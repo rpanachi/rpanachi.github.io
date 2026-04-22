@@ -29,7 +29,6 @@ description: Rodrigo Panachi's tech blog
 bio:         A Software Engineer that like to code and learn new things. Subscribe to my <a href="https://feeds.feedburner.com/rpanachi" target="_blank">RSS feed</a> to stay tuned, check my code on <a href="https://github.com/rpanachi">Github</a> and hire me on <a href="https://linkedin.com/in/rpanachi">Linkedin</a>.
 
 # Custom Configs
-disqus_id: rpanachi
 google_analytics: 'G-HHZCBHXG3L'
 links:
   github: https://github.com/rpanachi

@@ -4,7 +4,6 @@ title: How Agile Killed the Software Industry
 date: 2026-04-22 00:00:00
 categories: [agile, software engineering, thoughts]
 excerpt: "The bureaucratic monster that ate the manifesto"
-disqus: true
 archive: true
 ---
 
