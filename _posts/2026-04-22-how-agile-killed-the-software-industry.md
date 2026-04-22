@@ -84,3 +84,5 @@ The manifesto is only 68 words long. Maybe it's time we actually read it.
 ---
 
 *Protip: If your "Agile transformation" requires hiring consultants, buying tools, and training everyone on new processes, you've already lost.*
+
+---
