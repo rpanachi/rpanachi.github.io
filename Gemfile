@@ -9,4 +9,4 @@ gem "jekyll-target-blank"
 gem "jekyll-archives"
 
 gem "ffi", "1.16.3"
-gem "nokogiri", "1.18.8"
+gem "nokogiri", "1.19.1"
