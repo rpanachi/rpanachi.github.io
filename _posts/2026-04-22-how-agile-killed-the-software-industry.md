@@ -79,7 +79,7 @@ The real Agile died when we turned principles into processes, values into ceremo
 
 Until we get back to the original principles - until we value individuals over processes, working software over documentation, customer collaboration over contracts, and responding to change over following plans - we're just rearranging deck chairs on the Titanic.
 
-The manifesto is only 68 words long. Maybe it's time we actually read it.
+The manifesto is only 68 words long. Maybe it's time we actually [read it](https://agilemanifesto.org).
 
 ---
 
