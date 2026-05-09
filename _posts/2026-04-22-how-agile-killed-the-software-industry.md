@@ -7,6 +7,7 @@ excerpt: "The bureaucratic monster that ate the manifesto"
 archive: true
 redirect_from:
   - /2026/04/22/how-agile-killed-the-software-industry/
+  - /how-agile-killed-the-software-industry
 ---
 
 > "Individuals and interactions over processes and tools."<br/>
