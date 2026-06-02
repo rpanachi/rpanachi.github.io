@@ -3,7 +3,7 @@ layout: post
 title: How Dark Souls Made Me a Better Software Engineer
 date: 2026-06-02 00:00:00
 categories: [software engineering, thoughts, games]
-excerpt: "The difficulty wasn't cruelty. It was a teacher."
+excerpt: "If it’s too hard, you’re doing it wrong."
 archive: true
 redirect_from:
   - /2026/06/02/how-dark-souls-made-me-a-better-software-engineer/
@@ -19,8 +19,6 @@ The game never told me where to go. No tips, no shortcuts, no markers. I’d fin
 After enough suffering, I quit. But the feeling of defeat followed me for years. What had I done wrong? Was the game just bad? Was it punishing for the sake of being punishing, designed only to make players angry?
 
 It took me years to find the answer. I’d grown up a little, both as a person and as an engineer, and I decided to give it another try — this time with a more mature, more patient, more deliberate approach. And almost immediately I understood what had gone wrong the first time.
-
-I had been playing it wrong.
 
 ## I Was Playing It Wrong
 
