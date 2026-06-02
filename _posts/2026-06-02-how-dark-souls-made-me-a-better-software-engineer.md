@@ -10,6 +10,9 @@ redirect_from:
   - /how-dark-souls-made-me-a-better-software-engineer
 ---
 
+> "Today is victory over yourself of yesterday."<br/>
+> — Miyamoto Musashi, The Book of Five Rings
+
 Dark Souls is not a game for the masses. It’s known for its brutal difficulty, its near-total lack of guidance, and a story buried so deep in item descriptions and environmental detail that most players never piece it together.
 
 I first played it when it launched, and I hated it. I spent hours trying to understand how to level up my character and make it stronger, and found only death, again and again. I tried different paths; I died. Every path I took ended the same way: killed by an enemy, or falling into a trap I never saw coming.
