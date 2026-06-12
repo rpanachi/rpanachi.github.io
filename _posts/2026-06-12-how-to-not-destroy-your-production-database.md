@@ -173,6 +173,8 @@ The "safe rename" is a sequence, not a statement — and the same sequence cover
 
 A direct `RENAME COLUMN` is atomic for the database but not for your fleet: during a rolling deploy, old instances are still querying the old name the instant the rename lands, and they start erroring. Routing through a new column keeps both names valid until every instance has moved over.
 
+The principle under the whole sequence: for the entire migration period the schema lives in two shapes at once, so your application code has to work against **both** — the old column and the new — until every instance has rolled over. That compatibility window is exactly what steps 2–4 buy you; skip it and the change only survives if the database and the whole fleet flip in the same instant, which during a rolling deploy they never do.
+
 Narrowing a type is the sharpest reason to work this way: a direct `ALTER` to a smaller width **silently truncates** every overflowing value under a non-strict MySQL — data loss with a green checkmark. Migrate through a new column and the overflow surfaces in the backfill, where *you* decide what happens to it instead of the engine deciding for you.
 
 ### What an in-place ALTER quietly takes from you
@@ -283,4 +285,4 @@ Before shipping anything that touches schema or data:
 
 Schema is code — it can be reverted. **Data is forever.** Respect that, and you'll never have to explain why the orders table has 4 million rows with status `'pending'`.
 
-Enjoy o/
+COMMIT;
