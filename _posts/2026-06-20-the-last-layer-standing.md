@@ -1,13 +1,13 @@
 ---
 layout: post
-title: The Second Half
+title: The Last Layer Standing
 date: 2026-06-20 00:00:00
 categories: [ai, software engineering, career, thoughts]
 excerpt: "The technology never kills you. Standing still does."
 archive: true
 redirect_from:
-  - /2026/06/20/the-second-half/
-  - /the-second-half
+  - /2026/06/20/the-last-layer-standing/
+  - /the-last-layer-standing
 ---
 
 > "It is unsinkable. God himself could not sink this ship."<br/>
