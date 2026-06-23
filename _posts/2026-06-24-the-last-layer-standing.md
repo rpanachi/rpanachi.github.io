@@ -49,7 +49,7 @@ The economics are simply different now. Work that justified a team and a quarter
 
 ## Software is becoming a commodity
 
-Follow the trend to its end and the conclusion is uncomfortable but hard to dodge: software development can be almost entirely automated. Not assisted — automated. Each wave so far abstracted away a layer we used to sweat over, and the last layer standing is the code itself.
+Follow the trend to its end and the conclusion is uncomfortable but hard to dodge: the production of code can be almost entirely automated. Not assisted — automated. Be precise about what that means, though — it's the *writing* of code that gets automated, not the deciding of *what* to write. Each wave so far abstracted away a layer we used to sweat over, and the last layer standing is the code itself.
 
 We're already partway there. A non-technical person can ship a real feature just by describing what they want — but only because a developer built the machine that makes it possible: the architecture, the infrastructure, the security model, the guardrails. Someone defined the rules of the game so others could play it without knowing them. Soon even that layer gets abstracted away. The same way AWS turned hardware into something you rent by the minute, building software becomes a feature of a platform — you describe the rules, and it writes, tests, and runs the code underneath. If that sounds far-fetched, remember that "rent a supercomputer with a credit card" sounded far-fetched too.
 
@@ -69,6 +69,8 @@ Those systems need people who actually understand them — experienced, technica
 
 So no — skilled people don't disappear. The seats reserved for genuinely capable professionals are never empty, because businesses still need humans to run them. What disappears is the comfortable middle: the role that was only ever about producing code.
 
+There's a catch I won't gloss over, though. That comfortable middle was also the *path in* — the rung where juniors used to climb from turning tickets into syntax up to making real calls. Automate the bottom of the ladder and you have to ask how anyone is supposed to reach the top of it. I don't have a clean answer. The honest version is that the way in gets narrower and steeper: the people who make it will be the ones who jump straight to judgment instead of spending years earning it one ticket at a time. Pretending the senior seats stay full without asking who gets to fill them would be dishonest.
+
 ## What AI still can't do
 
 It's worth being concrete about why those seats stay filled. For all its speed, AI still can't do the things the job actually rewards.
@@ -85,32 +87,20 @@ And it doesn't carry responsibility. When the deploy takes down production at 2 
 
 This is the gap. And it's exactly where the value moved.
 
-## So here's my plan
-
-Enough analysis. Here's the personal part — what I'm actually going to do for the next ten or fifteen years to make sure I'm still holding a seat when the music stops.
-
-**Move up the stack, deliberately.** The machine is coming for the typing, so I'm going to do less of it. I'll put my hours where AI is weakest: architecture, system design, the trade-offs and the calls that carry consequences. Deciding *what* to build and *why* is the job now. The *how* is becoming a prompt.
-
-**Use AI harder than anyone around me.** I'm not going to fight the tide — I'm going to surf it. I treat these tools the way I once treated the compiler and the cloud: something to master until it's an extension of my hands. The aim is blunt — be the person who ships what used to take five, because I turned AI into leverage instead of treating it as a threat.
-
-**Take the hard, ugly, high-stakes systems.** Clean greenfield projects are exactly what gets commoditized first. So I'll go the other way — toward the gnarly legacy, the mission-critical, the can't-just-restart-it systems where someone has to understand the whole machine and answer for it when it breaks. That seat doesn't vanish. I intend to be in it.
-
-**Stay glued to the outcome, not the code.** I'm paid to solve problems and create value, not to emit lines. So I'll keep moving closer to the business, the customer, and the money — the context no model can infer from a ticket. Whoever understands the *problem* best is the last to be automated away.
-
-None of this is guaranteed. Nothing is, anymore. But a plan beats hoping the tornado skips your house.
-
 ## Conclusion
 
-Strip away the specifics, and the second half comes down to four things I try not to forget:
+Strip away the specifics, and the second half comes down to four things I try not to forget — and what each one means for what I'm actually going to do over the next ten or fifteen years.
 
-**AI is a tool.** A spectacularly powerful, genuinely impressive one — but a tool, in the same lineage as the compiler, the cloud, and the framework. It isn't magic, and it isn't the end of the story. It's the next chapter.
+**AI is a tool.** A spectacularly powerful, genuinely impressive one — but a tool, in the same lineage as the compiler, the cloud, and the framework. It isn't magic, and it isn't the end of the story. It's the next chapter. So I won't fight the tide — I'll surf it. I intend to use AI harder than anyone around me, mastering it the way I once mastered the compiler and the cloud, until it's an extension of my hands and I'm the one shipping what used to take five.
 
-**Tools exist so that someone can make something.** Nobody remembers the hammer; they remember the house. The value was never in the instrument — it was in what you built and the problem you solved. Stay focused on the outcome, not the tool of the moment.
+**Tools exist so that someone can make something.** Nobody remembers the hammer; they remember the house. The value was never in the instrument — it was in what you built and the problem you solved. So I'll stay glued to the outcome, not the code: closer to the business, the customer, and the money — the context no model can infer from a ticket. Whoever understands the *problem* best is the last to be automated away.
 
-**Every tool has to be mastered.** The developers who thrived through each shift weren't the ones with the most to protect; they were the ones who learned the new thing fastest. The ones who refused — who insisted the old way was the only *real* way — became the bodies on the path. Keep learning, or become a case study.
+**Every tool has to be mastered.** The developers who thrived through each shift weren't the ones with the most to protect; they were the ones who learned the new thing fastest. The ones who refused — who insisted the old way was the only *real* way — became the bodies on the path. So I'll move up the stack deliberately, putting my hours where AI is weakest: architecture, system design, the trade-offs and the calls that carry consequences. Deciding *what* to build and *why* is the job now; the *how* is becoming a prompt.
 
-**Read the signals and adapt.** Watch the environment. Notice what's becoming a commodity and move before the floor you're standing on disappears. Relevance isn't a position you hold; it's something you keep earning.
+**Read the signals and adapt.** Watch the environment. Notice what's becoming a commodity and move before the floor you're standing on disappears. Clean greenfield is the first thing to go, so I'll go the other way — toward the gnarly legacy, the mission-critical, the can't-just-restart-it systems where someone has to understand the whole machine and answer for it when it breaks. Relevance isn't a position you hold; it's something you keep earning.
 
-I've watched this industry demolish and rebuild itself several times now, and the lesson is always the same. The technology that arrives isn't what kills you. Standing still is.
+None of this is guaranteed. Nothing is, anymore. But a plan beats hoping the tornado skips your house. "God himself could not sink this ship," they said — and every unsinkable ship belongs to someone who stopped watching the water. Borland was unsinkable once. So was Kodak.
+
+I've watched this industry demolish and rebuild itself several times now, and the lesson is always the same. The technology that arrives isn't what kills you. Standing still is. Each wave abstracts away another layer, and one day it will come for the code itself — but the last layer standing was never the code. It's the person who knows what to build, why it matters, and who answers for it when it breaks. That layer is you.
 
 I've had to reinvent how I work every decade. Here we go again.
