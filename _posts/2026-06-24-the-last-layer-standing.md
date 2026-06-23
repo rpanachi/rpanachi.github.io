@@ -1,12 +1,12 @@
 ---
 layout: post
 title: The Last Layer Standing
-date: 2026-06-20 00:00:00
+date: 2026-06-24 00:00:00
 categories: [ai, software engineering, career, thoughts]
 excerpt: "The technology never kills you. Standing still does."
 archive: true
 redirect_from:
-  - /2026/06/20/the-last-layer-standing/
+  - /2026/06/24/the-last-layer-standing/
   - /the-last-layer-standing
 ---
 
