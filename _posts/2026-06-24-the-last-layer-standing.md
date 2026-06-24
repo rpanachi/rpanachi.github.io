@@ -42,6 +42,7 @@ That speed-up isn't a one-off. It shows up everywhere:
 - A CRUD app that used to need a team of five — backend, frontend, database, a little DevOps, someone to glue it all together — can now be scaffolded by one person in an afternoon.
 - Boilerplate that took a day writes itself in seconds: models, migrations, endpoints, forms, validation, tests.
 - The documentation safari — twelve browser tabs and a pilgrimage to Stack Overflow — collapses into a single question.
+- Translating a service from one language to another, generating tests for legacy code, drafting the first version of a CI/CD pipeline — all of it, faster and cheaper than ever.
 
 The economics are simply different now. Work that justified a team and a quarter can be done by one experienced person in a sprint.
 
