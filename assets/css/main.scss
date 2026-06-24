@@ -11,7 +11,7 @@
    Design tokens — tweak the palette here
    ========================================================================== */
 
-:root {
+@mixin light-tokens {
   --bg:           #ffffff;
   --bg-soft:      #f6f7f9;
   --text:         #24292f;  /* body copy            */
@@ -24,30 +24,37 @@
   --code-border:  #e6e8eb;
   --code-text:    #24292f;
   --selection:    #dbeafe;
+  color-scheme: light;
 }
 
+@mixin dark-tokens {
+  --bg:           #0f1115;
+  --bg-soft:      #161922;
+  --text:         #c7d0da;
+  --text-strong:  #f0f3f6;
+  --muted:        #8b95a3;
+  --border:       #262b33;
+  --accent:       #6ea8fe;
+  --accent-hover: #9ec1ff;
+  --code-bg:      #161b22;
+  --code-border:  #2a2f37;
+  --code-text:    #d6dde6;
+  --selection:    #1f3a5f;
+  color-scheme: dark;
+}
+
+/* Light by default. */
+:root { @include light-tokens; }
+
+/* Follow the OS when the visitor hasn't explicitly chosen a theme
+   (the header toggle sets data-theme, which opts out of this). */
 @media (prefers-color-scheme: dark) {
-  :root {
-    --bg:           #0f1115;
-    --bg-soft:      #161922;
-    --text:         #c7d0da;
-    --text-strong:  #f0f3f6;
-    --muted:        #8b95a3;
-    --border:       #262b33;
-    --accent:       #6ea8fe;
-    --accent-hover: #9ec1ff;
-    --code-bg:      #161b22;
-    --code-border:  #2a2f37;
-    --code-text:    #d6dde6;
-    --selection:    #1f3a5f;
-  }
+  :root:not([data-theme="light"]) { @include dark-tokens; }
 }
 
-/* Tell the browser we support both schemes — stops the muddy auto-invert
-   of dark-mode browsers and themes form controls / scrollbars to match. */
-html {
-  color-scheme: light dark;
-}
+/* An explicit choice from the header toggle always wins. */
+:root[data-theme="light"] { @include light-tokens; }
+:root[data-theme="dark"]  { @include dark-tokens; }
 
 /* ==========================================================================
    Base
@@ -253,6 +260,8 @@ table tbody > tr:nth-child(odd) > th { background: var(--bg-soft); }
 .main-header .main-nav .main-nav-links {
   float: right;
   margin-top: 10px;
+  display: flex;
+  align-items: center;   /* vertically centre every icon, incl. the toggle */
 }
 .main-header .main-nav .main-nav-links a {
   padding: 10px;
@@ -264,6 +273,9 @@ table tbody > tr:nth-child(odd) > th { background: var(--bg-soft); }
   fill: var(--muted);
   transition: fill ease 0.2s;
 }
+/* Render icons as blocks so the inline baseline gap doesn't offset them.
+   Scoped to anchors so it doesn't fight the toggle's show/hide rules. */
+.main-header .main-nav .main-nav-links a svg { display: block; }
 .main-header .main-nav .main-nav-links svg:hover {
   fill: var(--text-strong);
 }
@@ -277,7 +289,32 @@ table tbody > tr:nth-child(odd) > th { background: var(--bg-soft); }
   color: var(--accent);
 }
 
+/* Light / dark toggle button — sits in the nav icon row.
+   Icon size + fill are inherited from the shared `.main-nav-links svg` rule,
+   so it matches the social icons automatically. */
+.theme-toggle {
+  -webkit-appearance: none;
+  appearance: none;
+  display: none;            /* revealed only when JS is available */
+  padding: 10px;            /* match the nav link padding */
+  margin: 0;
+  background: none;
+  border: 0;
+  cursor: pointer;
+  line-height: 0;
+  vertical-align: middle;
+}
+.js .theme-toggle { display: inline-block; }
+
+/* Show the moon in light mode (click → go dark), the sun in dark mode.
+   `block` matches the anchor icons so the button keeps the same height. */
+.theme-toggle__sun  { display: none; }
+.theme-toggle__moon { display: block; }
+[data-theme="dark"] .theme-toggle__sun  { display: block; }
+[data-theme="dark"] .theme-toggle__moon { display: none; }
+
 @media only screen and (min-width: 320px) and (max-width: 768px) {
+  .main-header .main-nav .theme-toggle { padding: 4px; }
   .main-header .main-nav {
     margin-top: 16px;
     width: 90%;
