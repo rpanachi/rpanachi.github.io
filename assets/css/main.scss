@@ -1,37 +1,250 @@
 ---
-# Let's add a comment to make this file sass-y.
-# Change this file for any custom CSS.
+# Custom theme overrides. Loaded AFTER screen.css, so these rules win.
+# Clean, readable redesign: Inter typography, near-black-on-white palette,
+# accent links, refined code blocks, and a real light/dark mode.
 ---
 
-.post-excerpt p {
-	display:inline;
+// Syntax highlighting (Rouge) partial from `_sass`
+@import "syntax";
+
+/* ==========================================================================
+   Design tokens — tweak the palette here
+   ========================================================================== */
+
+:root {
+  --bg:           #ffffff;
+  --bg-soft:      #f6f7f9;
+  --text:         #24292f;  /* body copy            */
+  --text-strong:  #0f1419;  /* headings / titles    */
+  --muted:        #5b6571;  /* meta, captions       */
+  --border:       #e7e9ee;  /* hairlines, dividers  */
+  --accent:       #2563eb;  /* links                */
+  --accent-hover: #1746b0;
+  --code-bg:      #f6f8fa;
+  --code-border:  #e6e8eb;
+  --code-text:    #24292f;
+  --selection:    #dbeafe;
 }
 
-.post-content h2 {
-  margin-bottom: 1.5em;
-
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg:           #0f1115;
+    --bg-soft:      #161922;
+    --text:         #c7d0da;
+    --text-strong:  #f0f3f6;
+    --muted:        #8b95a3;
+    --border:       #262b33;
+    --accent:       #6ea8fe;
+    --accent-hover: #9ec1ff;
+    --code-bg:      #161b22;
+    --code-border:  #2a2f37;
+    --code-text:    #d6dde6;
+    --selection:    #1f3a5f;
+  }
 }
 
-.post-content hr {
-  margin: 2.5em 0;
+/* Tell the browser we support both schemes — stops the muddy auto-invert
+   of dark-mode browsers and themes form controls / scrollbars to match. */
+html {
+  color-scheme: light dark;
 }
 
-// Import partials from `sass_dir` (defaults to `_sass`)
-@import
-	"syntax"
-;
+/* ==========================================================================
+   Base
+   ========================================================================== */
 
-.main-header {
-  all: unset;
+$sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+$mono: ui-monospace, 'SFMono-Regular', 'SF Mono', 'JetBrains Mono', Menlo, Consolas, monospace;
+
+body {
+  font-family: $sans;
+  background: var(--bg);
+  color: var(--text);
+  font-size: 1.9rem;
+  line-height: 1.72;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
 }
-.home-template .main-header:after {
-  all: unset;
+
+::selection   { background: var(--selection); }
+::-moz-selection { background: var(--selection); }
+
+/* ==========================================================================
+   Typography
+   ========================================================================== */
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: $sans;
+  color: var(--text-strong);
+  font-weight: 700;
+  letter-spacing: -0.018em;
+  text-indent: 0;
+  line-height: 1.2;
 }
+
+h1 { font-weight: 800; letter-spacing: -0.03em; }
+h2 { font-weight: 700; letter-spacing: -0.022em; }
+
+p, ul, ol, dl { color: var(--text); }
+
+/* The base theme hardcodes "Open Sans" / "Merriweather" in several places,
+   but we only load Inter now — remap them so nothing falls back to a
+   random system font. */
+.main-nav a,
+.post-meta,
+.pagination,
+.site-footer,
+.page-title,
+.page-description,
+.author-title,
+.author-bio,
+.author-meta,
+.author-profile .author-meta,
+.post-footer h4,
+.post-footer p { font-family: $sans; }
+
+/* Better vertical rhythm for in-article headings */
+.post-content h2 { margin-top: 1.9em; margin-bottom: 0.55em; }
+.post-content h3 { margin-top: 1.5em; margin-bottom: 0.45em; }
+.post-content hr { margin: 2.8em 0; }
+.post-content hr,
+hr { border-top: 1px solid var(--border); }
+
+/* Post titles read as strong near-black, links only reveal on hover */
+.post-title a {
+  color: var(--text-strong);
+  transition: color ease 0.2s;
+}
+.post-title a:hover { color: var(--accent); }
+
+/* Body links: clearly links — accent colour + subtle underline */
+.post-content a,
+.post-excerpt a:not(.read-more) {
+  color: var(--accent);
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 2px;
+  text-decoration-color: color-mix(in srgb, var(--accent) 35%, transparent);
+  transition: color ease 0.2s, text-decoration-color ease 0.2s;
+}
+.post-content a:hover,
+.post-excerpt a:not(.read-more):hover {
+  color: var(--accent-hover);
+  text-decoration-color: currentColor;
+}
+.read-more { color: var(--muted); text-decoration: none; }
+.read-more:hover { color: var(--accent); }
+
+/* ==========================================================================
+   Blockquote
+   ========================================================================== */
+
+blockquote {
+  border-left: 3px solid var(--accent);
+  margin-left: 0;
+  padding-left: 1.4em;
+}
+blockquote p { color: var(--muted); font-style: italic; }
+blockquote small { color: var(--muted); }
+
+/* ==========================================================================
+   Code
+   ========================================================================== */
+
+code, tt {
+  font-family: $mono;
+  font-size: 0.86em;
+  background: var(--code-bg);
+  border: 1px solid var(--code-border);
+  color: var(--code-text);
+  border-radius: 4px;
+  padding: 0.12em 0.4em;
+}
+
+pre {
+  font-family: $mono;
+  font-size: 0.86em;
+  line-height: 1.55;
+  background: var(--code-bg);
+  border: 1px solid var(--code-border);
+  border-radius: 8px;
+  padding: 16px 18px;
+}
+pre code, pre tt { border: none; background: transparent; padding: 0; }
+
+/* ==========================================================================
+   Tables
+   ========================================================================== */
+
+table th, table td { border-top: 1px solid var(--border); }
+table th { color: var(--text-strong); }
+table tbody > tr:nth-child(odd) > td,
+table tbody > tr:nth-child(odd) > th { background: var(--bg-soft); }
+
+/* ==========================================================================
+   Post list / meta
+   ========================================================================== */
+
+.post {
+  border-bottom: 1px solid var(--border);
+}
+/* Drop the decorative circle on the divider for a cleaner separation */
+.post:after,
+.author-profile:after,
+.extra-pagination:after { display: none; }
+
+.post-excerpt p { display: inline; }
+
+.post-meta,
+.post-meta a { color: var(--muted); }
+.post-meta a:hover { color: var(--accent); text-decoration: underline; }
+
+/* ==========================================================================
+   Footer
+   ========================================================================== */
+
+.site-footer {
+  border-top: 1px solid var(--border);
+  color: var(--muted);
+}
+.site-footer a { color: var(--muted); }
+.site-footer a:hover { color: var(--accent); }
+
+.post-footer { border-top: 1px solid var(--border); }
+.post-footer h4 a { color: var(--text-strong); }
+.post-footer .author-meta,
+.post-footer .author-meta a { color: var(--muted); }
+
+/* ==========================================================================
+   Pagination
+   ========================================================================== */
+
+.pagination,
+.pagination a { color: var(--muted); }
+.older-posts,
+.newer-posts {
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  transition: all ease 0.2s;
+}
+.older-posts:hover,
+.newer-posts:hover {
+  color: var(--accent);
+  border-color: var(--accent);
+}
+
+/* ==========================================================================
+   Header / top navigation  (structural rules kept, recoloured via tokens)
+   ========================================================================== */
+
+.main-header { all: unset; }
+.home-template .main-header:after { all: unset; }
 
 .main-header .main-nav {
   margin: 0 auto;
-  padding-bottom: 10px;
-  border-bottom: 1px solid #ddd;
+  padding-bottom: 14px;
+  border-bottom: 1px solid var(--border);
 }
 .main-header .main-nav .main-nav-logo {
   float: left;
@@ -39,26 +252,29 @@
 }
 .main-header .main-nav .main-nav-links {
   float: right;
-  margin-top: 6px;
+  margin-top: 10px;
 }
 .main-header .main-nav .main-nav-links a {
   padding: 10px;
   overflow: hidden;
 }
 .main-header .main-nav .main-nav-links svg {
-  width: 36px;
-  height: 36px;
-  fill: #4A4A4A;
+  width: 30px;
+  height: 30px;
+  fill: var(--muted);
+  transition: fill ease 0.2s;
 }
 .main-header .main-nav .main-nav-links svg:hover {
-  fill: #000;
+  fill: var(--text-strong);
 }
 .main-header .main-nav .main-nav-logo h1 {
-  color: #4a4a4a;
-  font-size: 2.5em;
+  color: var(--text-strong);
+  font-size: 2.2em;
+  font-weight: 800;
+  letter-spacing: -0.03em;
 }
 .main-header .main-nav .main-nav-logo h1:hover {
-  color: #000;
+  color: var(--accent);
 }
 
 @media only screen and (min-width: 320px) and (max-width: 768px) {
@@ -70,13 +286,13 @@
     margin-top: 10px;
   }
   .main-header .main-nav .main-nav-logo h1 {
-    font-size: 2em;
+    font-size: 1.8em;
   }
   .main-header .main-nav .main-nav-links a {
-    padding: 2px;
+    padding: 4px;
   }
   .main-header .main-nav .main-nav-links svg {
-    width: 20px;
-    height: 20px;
+    width: 22px;
+    height: 22px;
   }
 }
