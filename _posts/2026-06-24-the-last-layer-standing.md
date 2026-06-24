@@ -13,11 +13,11 @@ redirect_from:
 > "It is unsinkable. God himself could not sink this ship."<br/>
 > — Cal Hockley, *Titanic* (1997)
 
-I'm somewhere in the second half of my career. If things go as planned, I'll retire from this industry in the next ten or fifteen years.
+After more than two decades in software, I'm probably closer to the end of my career than the beginning.
 
 Lately I keep wondering what software will even look like by then. AI has already changed everything — and it's only getting started. So what comes after?
 
-When I want to imagine the future, I look at my past. I've been doing this long enough to have watched the industry tear itself down and rebuild from scratch more than once. The details change every time. The pattern doesn't.
+When I want to imagine the future, I look at my past. I've been doing this long enough to have watched the industry tear itself down and rebuild from scratch more than once. The details change every time. The pattern doesn't. Every era is certain its dominant platform is unsinkable — and every era has been wrong.
 
 ## The industry never sits still
 
@@ -27,7 +27,7 @@ And then came the internet. Everything changed. The client-server model, a new p
 
 Then infrastructure became the bottleneck. Running software meant buying racks of expensive hardware and hiring a dedicated team to babysit it. It was slow, it was costly, and it didn't scale.
 
-And then came AWS. Everything changed again. That pile of money companies had sunk into hardware turned into scrap almost overnight. A small team could suddenly rent world-class infrastructure for pocket change, and a whole class of scalability problems vanished behind a single click.
+And then came AWS. Everything changed again. Almost overnight, owning hardware stopped being an advantage and started to look like a liability. A small team could suddenly rent world-class infrastructure for pocket change, and a whole class of scalability problems vanished behind a single click.
 
 And then came the SaaS economy. Why build authentication, payments, search, or messaging yourself when you could rent each one and wire them together in an afternoon? Whole categories of software that used to take a team a year shrank to a few lines of integration and a monthly invoice. Building started to look less like engineering from scratch and more like assembling parts someone else maintained.
 
@@ -42,8 +42,6 @@ That speed-up isn't a one-off. It shows up everywhere:
 - A CRUD app that used to need a team of five — backend, frontend, database, a little DevOps, someone to glue it all together — can now be scaffolded by one person in an afternoon.
 - Boilerplate that took a day writes itself in seconds: models, migrations, endpoints, forms, validation, tests.
 - The documentation safari — twelve browser tabs and a pilgrimage to Stack Overflow — collapses into a single question.
-- The glue code between two APIs that nobody wants to write gets written instantly.
-- Translating a service from one language to another, generating tests for legacy code, drafting the first version of a CI/CD pipeline — all of it, faster and cheaper than ever.
 
 The economics are simply different now. Work that justified a team and a quarter can be done by one experienced person in a sprint.
 
@@ -53,13 +51,15 @@ Follow the trend to its end and the conclusion is uncomfortable but hard to dodg
 
 We're already partway there. A non-technical person can ship a real feature just by describing what they want — but only because a developer built the machine that makes it possible: the architecture, the infrastructure, the security model, the guardrails. Someone defined the rules of the game so others could play it without knowing them. Soon even that layer gets abstracted away. The same way AWS turned hardware into something you rent by the minute, building software becomes a feature of a platform — you describe the rules, and it writes, tests, and runs the code underneath. If that sounds far-fetched, remember that "rent a supercomputer with a credit card" sounded far-fetched too.
 
+And the early versions already exist. Cursor, Replit, Lovable, v0, Claude Code — these are crude, first-generation sketches of that platform, and they're improving faster than anything I've watched in twenty years. They already scaffold a working app, wire up a database, and fix their own errors from a plain-English prompt; the things they still get wrong are shrinking release by release, not decade by decade. Each iteration eats a little more of the work that used to require someone who knew the syntax by heart. Extrapolate that curve — not to magic, just to "considerably better than today" — and a platform that writes, tests, and runs its own code stops reading like science fiction and starts reading like the next obvious thing to rent.
+
 And no company gets to sit this one out. Every one of those waves left bodies on the path — outfits that owned their era and were too comfortable, too slow, or too afraid to follow it into the next. Borland owned developer tools and dissolved into a footnote; Kodak invented the digital camera and then buried it. The rule never changes: when the ground moves, you move with it or you become history. This wave won't spare anyone who stands still either.
 
 ## So, are developers history?
 
 That's the companies. But what about us — the people who actually write the software? If building really can be automated, is the developer, as we know the role, about to become history?
 
-My honest answer: the *code-typist* version of the job is. The person whose value was mostly turning tickets into syntax is in for a hard decade. That part of the work is exactly what the machine is best at.
+The *code-typist* version of the job is. The person whose value was mostly turning tickets into syntax is in for a hard decade. That part of the work is exactly what the machine is best at.
 
 But "developer" was never really about typing. The new developer is the person who uses creativity, judgment, and tools — AI included — to create value and solve real problems. Does that person need to be deeply technical? Well… *it depends* (says the senior developer).
 
