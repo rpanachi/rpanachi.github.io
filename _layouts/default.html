@@ -2,17 +2,14 @@
 <html>
 <head>
     <!-- Resolve the colour theme before first paint to avoid a flash.
-         Uses the visitor's saved choice, else falls back to the OS setting. -->
+         Light is the default; dark only if the visitor explicitly chose it. -->
     <script>
       (function () {
         var el = document.documentElement;
         el.classList.add('js');
         try {
-          var saved = localStorage.getItem('theme');
-          var theme = (saved === 'light' || saved === 'dark')
-            ? saved
-            : (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
-          el.setAttribute('data-theme', theme);
+          el.setAttribute('data-theme',
+            localStorage.getItem('theme') === 'dark' ? 'dark' : 'light');
         } catch (e) {}
       })();
     </script>

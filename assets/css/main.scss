@@ -43,18 +43,11 @@
   color-scheme: dark;
 }
 
-/* Light by default. */
+/* Light is the default theme, regardless of the visitor's OS setting. */
 :root { @include light-tokens; }
 
-/* Follow the OS when the visitor hasn't explicitly chosen a theme
-   (the header toggle sets data-theme, which opts out of this). */
-@media (prefers-color-scheme: dark) {
-  :root:not([data-theme="light"]) { @include dark-tokens; }
-}
-
-/* An explicit choice from the header toggle always wins. */
-:root[data-theme="light"] { @include light-tokens; }
-:root[data-theme="dark"]  { @include dark-tokens; }
+/* Dark mode is opt-in via the header toggle (choice persists in localStorage). */
+:root[data-theme="dark"] { @include dark-tokens; }
 
 /* ==========================================================================
    Base
@@ -124,6 +117,14 @@ hr { border-top: 1px solid var(--border); }
   transition: color ease 0.2s;
 }
 .post-title a:hover { color: var(--accent); }
+
+/* Smaller post titles on phones so they don't dominate the listing.
+   Targeted by tag (listing = h2, single post = h1) since the body class
+   isn't a reliable template indicator in this theme. */
+@media (max-width: 500px) {
+  .post h2.post-title { font-size: 2.1rem; }   /* listing items */
+  .post h1.post-title { font-size: 2.4rem; }   /* single post heading */
+}
 
 /* Body links: clearly links — accent colour + subtle underline */
 .post-content a,
@@ -252,14 +253,13 @@ table tbody > tr:nth-child(odd) > th { background: var(--bg-soft); }
   margin: 0 auto;
   padding-bottom: 14px;
   border-bottom: 1px solid var(--border);
+  display: flex;
+  align-items: center;   /* vertically centre the title and the icon row */
 }
 .main-header .main-nav .main-nav-logo {
-  float: left;
-  margin-right: 30px;
+  margin-right: auto;    /* push the icon row to the right edge */
 }
 .main-header .main-nav .main-nav-links {
-  float: right;
-  margin-top: 10px;
   display: flex;
   align-items: center;   /* vertically centre every icon, incl. the toggle */
 }
@@ -284,6 +284,7 @@ table tbody > tr:nth-child(odd) > th { background: var(--bg-soft); }
   font-size: 2.2em;
   font-weight: 800;
   letter-spacing: -0.03em;
+  margin: 0;             /* drop the heading's bottom margin so it centres */
 }
 .main-header .main-nav .main-nav-logo h1:hover {
   color: var(--accent);
@@ -319,17 +320,18 @@ table tbody > tr:nth-child(odd) > th { background: var(--bg-soft); }
     margin-top: 16px;
     width: 90%;
   }
-  .main-header .main-nav .main-nav-links {
-    margin-top: 10px;
-  }
   .main-header .main-nav .main-nav-logo h1 {
-    font-size: 1.8em;
+    /* Scale the title down on narrow screens so it stays on one line next to
+       the icon row (a fixed ~150px). Floors at 1em on tiny screens, caps at
+       1.8em near the breakpoint. */
+    font-size: clamp(1em, calc(13.3vw - 27px), 1.8em);
+    white-space: nowrap;
   }
   .main-header .main-nav .main-nav-links a {
     padding: 4px;
   }
   .main-header .main-nav .main-nav-links svg {
-    width: 22px;
-    height: 22px;
+    width: 18px;
+    height: 18px;
   }
 }
